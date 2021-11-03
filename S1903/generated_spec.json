@@ -1,0 +1,87 @@
+{
+  "populationType": {
+    "_DEFAULT": "Person"
+  },
+  "measurement": {
+    "_DEFAULT": {
+      "measuredProperty": "count XXXXX",
+      "statType": "measuredValue"
+    },
+    "Margin of Error": {
+      "measuredProperty": "count",
+      "statType": "marginOfError"
+    },
+    "Median income (dollars)": {
+      "measuredProperty": "income",
+      "statType": "medianValue",
+      "age": "[15 - Years]",
+      "incomeStatus": "WithIncome",
+      "unit": "USDollar"
+    }
+  },
+  "enumSpecializations": {
+    "White": "One race",
+    "Black or African American": "One race",
+    "American Indian and Alaska Native": "One race",
+    "Asian": "One race",
+    "Native Hawaiian and Other Pacific Islander": "One race",
+    "Some other race": "One race"
+  },
+  "pvs": {
+    "age": {
+      "65 years and over": "[65 - Years]"
+    },
+    "householdType": {
+      "Married-couple families": "MarriedCoupleFamilyHousehold",
+      "Female householder, no spouse present": "SingleMotherFamilyHousehold",
+      "Female householder, no husband present": "SingleMotherFamilyHousehold"
+    },
+    "race": {
+      "Black or African American": "BlackOrAfricanAmericanAlone",
+      "Hispanic or Latino origin (of any race)": "HispanicOrLatino",
+      "White alone, not Hispanic or Latino": "WhiteAloneNotHispanicOrLatino",
+      "One race": "OneRace",
+      "Two or more races": "TwoOrMoreRaces",
+      "White": "WhiteAlone",
+      "American Indian and Alaska Native": "AmericanIndianOrAlaskaNativeAlone",
+      "Asian": "AsianAlone",
+      "Native Hawaiian and Other Pacific Islander": "NativeHawaiianOrOtherPacificIslanderAlone",
+      "Some other race": "SomeOtherRaceAlone"
+    },
+    "statType": {
+      "Margin of Error": "marginOfError"
+    },
+    "householderRace": {
+      "One race": "OneRace",
+      "White": "WhiteAlone",
+      "Black or African American": "BlackOrAfricanAmericanAlone",
+      "American Indian and Alaska Native": "AmericanIndianOrAlaskaNativeAlone",
+      "Asian": "AsianAlone",
+      "Native Hawaiian and Other Pacific Islander": "NativeHawaiianOrOtherPacificIslanderAlone",
+      "Some other race": "SomeOtherRaceAlone",
+      "Two or more races": "TwoOrMoreRaces",
+      "Hispanic or Latino origin (of any race)": "HispanicOrLatino",
+      "White alone, not Hispanic or Latino": "WhiteAloneNotHispanicOrLatino"
+    }
+  },
+  "inferredSpec": {
+    "householdType": {
+      "age": "[15 19 Years]",
+      "residenceType": "Household"
+    },
+    "race": {
+      "age": "[1 - Years]"
+    }
+  },
+  "universePVs": [],
+  "denominators": {},
+  "ignoreColumns XXXXX": [
+    "Total",
+    "PERCENT IMPUTED",
+    "Percent Imputed",
+    "PERCENT ALLOCATED"
+  ],
+  "ignoreTokens XXXXX": [
+    "Estimate"
+  ]
+}

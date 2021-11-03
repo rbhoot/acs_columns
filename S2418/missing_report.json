@@ -1,0 +1,21 @@
+{
+  "columns_missing_pv": [
+    "Estimate!!Median earnings (dollars) for male!!Civilian employed population 16 years and over with earnings",
+    "Women's earnings as a percentage of men's earning!!Estimate!!Civilian employed population 16 years and over with earnings",
+    "Median earnings (dollars) for male!!Estimate!!Civilian employed population 16 years and over with earnings",
+    "Median earnings (dollars)!!Estimate!!Civilian employed population 16 years and over with earnings",
+    "Median earnings (dollars) for female!!Estimate!!Civilian employed population 16 years and over with earnings",
+    "Estimate!!Women's earnings as a percentage of men's earning!!Civilian employed population 16 years and over with earnings",
+    "Estimate!!Median earnings (dollars)!!Civilian employed population 16 years and over with earnings",
+    "Estimate!!Median earnings (dollars) for female!!Civilian employed population 16 years and over with earnings"
+  ],
+  "missing_tokens": [
+    "Estimate",
+    "Civilian employed population 16 years and over with earnings",
+    "Women's earnings as a percentage of men's earning",
+    "Median earnings (dollars) for male MOE",
+    "Women's earnings as a percentage of men's earning MOE",
+    "Median earnings (dollars) MOE",
+    "Median earnings (dollars) for female MOE"
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "populationType": {
+    "_DEFAULT": "Person"
+  },
+  "measurement": {
+    "_DEFAULT": {
+      "measuredProperty": "count XXXXX",
+      "statType": "measuredValue"
+    },
+    "Margin of Error": {
+      "measuredProperty": "count",
+      "statType": "marginOfError"
+    }
+  },
+  "enumSpecializations": {
+    "White": "One race",
+    "Black or African American": "One race",
+    "American Indian and Alaska Native": "One race",
+    "Asian": "One race",
+    "Native Hawaiian and Other Pacific Islander": "One race",
+    "Some other race": "One race"
+  },
+  "pvs": {
+    "age": {
+      "35 to 44 years": "[35 44 Years]",
+      "45 to 54 years": "[45 54 Years]",
+      "55 to 64 years": "[55 64 Years]",
+      "65 to 74 years": "[65 74 Years]",
+      "75 years and over": "[75 - Years]",
+      "Population 16 years and over": "[16 - Years]"
+    },
+    "gender": {
+      "Male": "Male",
+      "Female": "Female"
+    },
+    "employmentStatus": {
+      "In labor force": "BLS_InLaborForce"
+    },
+    "race": {
+      "Black or African American": "BlackOrAfricanAmericanAlone",
+      "Hispanic or Latino origin (of any race)": "HispanicOrLatino",
+      "White alone, not Hispanic or Latino": "WhiteAloneNotHispanicOrLatino",
+      "One race": "OneRace",
+      "White alone": "WhiteAlone",
+      "Black or African American alone": "BlackOrAfricanAmericanAlone",
+      "American Indian and Alaska Native alone": "AmericanIndianOrAlaskaNativeAlone",
+      "Asian alone": "AsianAlone",
+      "Native Hawaiian and Other Pacific Islander alone": "NativeHawaiianOrOtherPacificIslanderAlone",
+      "Some other race alone": "SomeOtherRaceAlone",
+      "Two or more races": "TwoOrMoreRaces",
+      "White": "WhiteAlone",
+      "American Indian and Alaska Native": "AmericanIndianOrAlaskaNativeAlone",
+      "Asian": "AsianAlone",
+      "Native Hawaiian and Other Pacific Islander": "NativeHawaiianOrOtherPacificIslanderAlone",
+      "Some other race": "SomeOtherRaceAlone"
+    },
+    "statType": {
+      "Margin of Error": "marginOfError"
+    },
+    "employment": {
+      "Employed": "BLS_Employed"
+    },
+    "educationalAttainment": {
+      "Less than high school graduate": "LessThanHighSchoolGraduate",
+      "High school graduate (includes equivalency)": "HighSchoolGraduateIncludesEquivalency",
+      "Some college or associate's degree": "SomeCollegeOrAssociatesDegree",
+      "Bachelor's degree or higher": "BachelorsDegreeOrHigher"
+    },
+    "povertyStatus": {
+      "Below poverty level": "BelowPovertyLevelInThePast12Months"
+    },
+    "householderRace": {
+      "One race": "OneRace",
+      "White alone": "WhiteAlone",
+      "White": "WhiteAlone",
+      "Black or African American alone": "BlackOrAfricanAmericanAlone",
+      "Black or African American": "BlackOrAfricanAmericanAlone",
+      "American Indian and Alaska Native alone": "AmericanIndianOrAlaskaNativeAlone",
+      "American Indian and Alaska Native": "AmericanIndianOrAlaskaNativeAlone",
+      "Asian alone": "AsianAlone",
+      "Asian": "AsianAlone",
+      "Native Hawaiian and Other Pacific Islander alone": "NativeHawaiianOrOtherPacificIslanderAlone",
+      "Native Hawaiian and Other Pacific Islander": "NativeHawaiianOrOtherPacificIslanderAlone",
+      "Some other race alone": "SomeOtherRaceAlone",
+      "Some other race": "SomeOtherRaceAlone",
+      "Two or more races": "TwoOrMoreRaces",
+      "Hispanic or Latino origin (of any race)": "HispanicOrLatino",
+      "White alone, not Hispanic or Latino": "WhiteAloneNotHispanicOrLatino"
+    },
+    "householderEducationalAttainment": {
+      "Less than high school graduate": "LessThanHighSchoolGraduate",
+      "High school graduate (includes equivalency)": "HighSchoolGraduateIncludesEquivalency",
+      "Bachelor's degree or higher": "BachelorsDegreeOrHigher"
+    }
+  },
+  "inferredSpec": {
+    "gender": {
+      "age": "[15 19 Years]"
+    },
+    "employmentStatus": {
+      "age": "[16 19 Years]"
+    },
+    "educationalAttainment": {
+      "age": "[25 - Years]"
+    },
+    "employment": {
+      "employmentStatus": "BLS_InLaborForce",
+      "age": "[16 - Years]"
+    },
+    "race": {
+      "age": "[1 - Years]"
+    },
+    "povertyStatus": {
+      "age": "[1 - Years]"
+    }
+  },
+  "universePVs": [
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "educationalAttainment"
+      ],
+      "dependentPVs": {
+        "age": "[25 - Years]"
+      }
+    },
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "employment"
+      ],
+      "dependentPVs": {
+        "age": "[16 - Years]"
+      }
+    }
+  ],
+  "denominators": {},
+  "ignoreColumns XXXXX": [
+    "Total",
+    "Total MOE",
+    "PERCENT IMPUTED",
+    "Percent Imputed"
+  ],
+  "ignoreTokens XXXXX": [
+    "POVERTY STATUS IN THE PAST 12 MONTHS",
+    "EDUCATIONAL ATTAINMENT",
+    "AGE",
+    "Estimate",
+    "RACE AND HISPANIC OR LATINO ORIGIN",
+    "SEX",
+    "DISABILITY STATUS"
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "populationType": {
+    "_DEFAULT": "Person"
+  },
+  "measurement": {
+    "_DEFAULT": {
+      "measuredProperty": "count XXXXX",
+      "statType": "measuredValue"
+    },
+    "Margin of Error": {
+      "measuredProperty": "count",
+      "statType": "marginOfError"
+    },
+    "Median income (dollars)": {
+      "measuredProperty": "income",
+      "statType": "medianValue",
+      "age": "[15 - Years]",
+      "incomeStatus": "WithIncome",
+      "unit": "USDollar"
+    }
+  },
+  "enumSpecializations": {
+    "White": "One race",
+    "Black or African American": "One race",
+    "American Indian and Alaska Native": "One race",
+    "Asian": "One race",
+    "Native Hawaiian and Other Pacific Islander": "One race",
+    "Some other race": "One race"
+  },
+  "pvs": {
+    "householdType": {
+      "Female householder, no spouse present": "SingleMotherFamilyHousehold",
+      "Female householder, no husband present": "SingleMotherFamilyHousehold"
+    },
+    "race": {
+      "Black or African American": "BlackOrAfricanAmericanAlone",
+      "Hispanic or Latino origin (of any race)": "HispanicOrLatino",
+      "White alone, not Hispanic or Latino": "WhiteAloneNotHispanicOrLatino",
+      "One race": "OneRace",
+      "White alone": "WhiteAlone",
+      "Black or African American alone": "BlackOrAfricanAmericanAlone",
+      "American Indian and Alaska Native alone": "AmericanIndianOrAlaskaNativeAlone",
+      "Asian alone": "AsianAlone",
+      "Native Hawaiian and Other Pacific Islander alone": "NativeHawaiianOrOtherPacificIslanderAlone",
+      "Some other race alone": "SomeOtherRaceAlone",
+      "Two or more races": "TwoOrMoreRaces",
+      "White": "WhiteAlone",
+      "American Indian and Alaska Native": "AmericanIndianOrAlaskaNativeAlone",
+      "Asian": "AsianAlone",
+      "Native Hawaiian and Other Pacific Islander": "NativeHawaiianOrOtherPacificIslanderAlone",
+      "Some other race": "SomeOtherRaceAlone"
+    },
+    "statType": {
+      "Margin of Error": "marginOfError"
+    },
+    "povertyStatus": {
+      "Below poverty level": "BelowPovertyLevelInThePast12Months",
+      "At or above poverty level": "AbovePovertyLevelInThePast12Months"
+    },
+    "householderRace": {
+      "One race": "OneRace",
+      "White alone": "WhiteAlone",
+      "White": "WhiteAlone",
+      "Black or African American alone": "BlackOrAfricanAmericanAlone",
+      "Black or African American": "BlackOrAfricanAmericanAlone",
+      "American Indian and Alaska Native alone": "AmericanIndianOrAlaskaNativeAlone",
+      "American Indian and Alaska Native": "AmericanIndianOrAlaskaNativeAlone",
+      "Asian alone": "AsianAlone",
+      "Asian": "AsianAlone",
+      "Native Hawaiian and Other Pacific Islander alone": "NativeHawaiianOrOtherPacificIslanderAlone",
+      "Native Hawaiian and Other Pacific Islander": "NativeHawaiianOrOtherPacificIslanderAlone",
+      "Some other race alone": "SomeOtherRaceAlone",
+      "Some other race": "SomeOtherRaceAlone",
+      "Two or more races": "TwoOrMoreRaces",
+      "Hispanic or Latino origin (of any race)": "HispanicOrLatino",
+      "White alone, not Hispanic or Latino": "WhiteAloneNotHispanicOrLatino"
+    }
+  },
+  "inferredSpec": {
+    "householdType": {
+      "age": "[15 19 Years]",
+      "residenceType": "Household"
+    },
+    "race": {
+      "age": "[1 - Years]"
+    },
+    "povertyStatus": {
+      "age": "[1 - Years]"
+    }
+  },
+  "universePVs": [],
+  "denominators": {},
+  "ignoreColumns XXXXX": [
+    "Total",
+    "Total MOE",
+    "PERCENT IMPUTED",
+    "Percent Imputed",
+    "Percent",
+    "Percent MOE"
+  ],
+  "ignoreTokens XXXXX": [
+    "POVERTY STATUS IN THE PAST 12 MONTHS",
+    "Estimate",
+    "DISABILITY STATUS"
+  ]
+}

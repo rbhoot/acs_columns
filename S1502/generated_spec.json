@@ -1,0 +1,50 @@
+{
+  "populationType": {
+    "_DEFAULT": "Person"
+  },
+  "measurement": {
+    "_DEFAULT": {
+      "measuredProperty": "count XXXXX",
+      "statType": "measuredValue"
+    },
+    "Margin of Error": {
+      "measuredProperty": "count",
+      "statType": "marginOfError"
+    }
+  },
+  "enumSpecializations": {},
+  "pvs": {
+    "age": {
+      "65 years and over": "[65 - Years]"
+    },
+    "gender": {
+      "Male": "Male",
+      "Female": "Female",
+      "Male MOE": "Male",
+      "Female MOE": "Female"
+    },
+    "statType": {
+      "Margin of Error": "marginOfError"
+    }
+  },
+  "inferredSpec": {
+    "gender": {
+      "age": "[15 19 Years]"
+    }
+  },
+  "universePVs": [],
+  "denominators": {},
+  "ignoreColumns XXXXX": [
+    "Total",
+    "Total MOE",
+    "Percent Male",
+    "Percent Female",
+    "Percent Male MOE",
+    "Percent Female MOE",
+    "Percent",
+    "Percent MOE"
+  ],
+  "ignoreTokens XXXXX": [
+    "Estimate"
+  ]
+}

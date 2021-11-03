@@ -1,0 +1,35 @@
+{
+  "columns_missing_pv": [
+    "Estimate!!Total population!!DISABILITY STATUS!!Total population",
+    "Estimate!!Total population!!PLACE OF BIRTH, NATIVITY AND CITIZENSHIP STATUS, AND YEAR OF ENTRY!!Total population",
+    "Estimate!!Total population!!Total population!!SEX AND AGE!!Median age (years)",
+    "Estimate!!Total population!!Total population"
+  ],
+  "missing_tokens": [
+    "Total population",
+    "Estimate",
+    "SEX AND AGE",
+    "LANGUAGE SPOKEN AT HOME AND ABILITY TO SPEAK ENGLISH",
+    "Speak English less than \"very well\"",
+    "PLACE OF BIRTH, NATIVITY AND CITIZENSHIP STATUS, AND YEAR OF ENTRY",
+    "EMPLOYMENT STATUS",
+    "Elsewhere",
+    "Different address in Puerto Rico or the United States",
+    "In Puerto Rico",
+    "Different municipio",
+    "In the United States",
+    "DISABILITY STATUS",
+    "Same municipio",
+    "EDUCATIONAL ATTAINMENT",
+    "VETERAN STATUS",
+    "MARITAL STATUS",
+    "SCHOOL ENROLLMENT",
+    "EARNINGS AND BENEFITS IN THE PAST 12 MONTHS (IN 2017 INFLATION-ADJUSTED DOLLARS)",
+    "OCCUPATION",
+    "Percent of civilian labor force",
+    "RACE AND HISPANIC ORIGIN OR LATINO ORIGIN",
+    "Total population MOE",
+    "EARNINGS AND BENEFITS IN THE PAST 12 MONTHS (IN 2018 INFLATION-ADJUSTED DOLLARS)",
+    "EARNINGS AND BENEFITS IN THE PAST 12 MONTHS (IN 2019 INFLATION-ADJUSTED DOLLARS)"
+  ]
+}

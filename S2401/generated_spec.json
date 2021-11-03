@@ -1,0 +1,135 @@
+{
+  "populationType": {
+    "_DEFAULT": "Person"
+  },
+  "measurement": {
+    "_DEFAULT": {
+      "measuredProperty": "count XXXXX",
+      "statType": "measuredValue"
+    },
+    "Margin of Error": {
+      "measuredProperty": "count",
+      "statType": "marginOfError"
+    },
+    "Median earnings (dollars)": {
+      "measuredProperty": "earnings",
+      "incomeStatus": "WithEarnings",
+      "statType": "medianValue",
+      "unit": "USDollar"
+    },
+    "Median earnings (dollars) for male": {
+      "measuredProperty": "earnings",
+      "incomeStatus": "WithEarnings",
+      "statType": "medianValue",
+      "gender": "Male",
+      "unit": "USDollar"
+    },
+    "Median earnings (dollars) for female": {
+      "measuredProperty": "earnings",
+      "incomeStatus": "WithEarnings",
+      "statType": "medianValue",
+      "gender": "Female",
+      "unit": "USDollar"
+    }
+  },
+  "enumSpecializations": {},
+  "pvs": {
+    "age": {
+      "Civilian employed population 16 years and over": "[16 - Years]"
+    },
+    "gender": {
+      "Male": "Male",
+      "Female": "Female",
+      "Male MOE": "Male",
+      "Female MOE": "Female"
+    },
+    "statType": {
+      "Margin of Error": "marginOfError"
+    },
+    "employment": {
+      "Civilian employed population 16 years and over": "BLS_Employed"
+    },
+    "armedForcesStatus": {
+      "Civilian employed population 16 years and over": "Civilian"
+    },
+    "occupation": {
+      "Management, business, science, and arts occupations": "SOCv2018/highLevelAggregation-1",
+      "Service occupations": "SOCv2018/intermediateAggregation-5",
+      "Sales and office occupations": "SOCv2018/highLevelAggregation-3",
+      "Natural resources, construction, and maintenance occupations": "SOCv2018/highLevelAggregation-4",
+      "Production, transportation, and material moving occupations": "SOCv2018/highLevelAggregation-5"
+    }
+  },
+  "inferredSpec": {
+    "gender": {
+      "age": "[15 19 Years]"
+    },
+    "employment": {
+      "employmentStatus": "BLS_InLaborForce",
+      "age": "[16 - Years]"
+    },
+    "occupation": {
+      "age": "[16 - Years]",
+      "workerStatus": "Worker"
+    }
+  },
+  "universePVs": [
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "armedForcesStatus"
+      ],
+      "dependentPVs": {
+        "age": "[16 - Years]"
+      }
+    },
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "employment"
+      ],
+      "dependentPVs": {
+        "age": "[16 - Years]"
+      }
+    },
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "armedForcesStatus"
+      ],
+      "dependentPVs": {
+        "age": "[16 - Years]",
+        "employmentStatus": "BLS_InLaborForce"
+      }
+    },
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "occupation"
+      ],
+      "dependentPVs": {
+        "age": "[16 - Years]",
+        "armedForcesStatus": "Civilian",
+        "employment": "BLS_Employed"
+      }
+    }
+  ],
+  "denominators": {},
+  "ignoreColumns XXXXX": [
+    "Total",
+    "Total MOE",
+    "PERCENT IMPUTED",
+    "Percent Male",
+    "Percent Female",
+    "Percent Male MOE",
+    "Percent Female MOE",
+    "Median earnings (dollars) for male!!Margin of Error!!Civilian employed population 16 years and over",
+    "Median earnings (dollars) for female!!Margin of Error!!Civilian employed population 16 years and over",
+    "Median earnings (dollars)!!Margin of Error!!Civilian employed population 16 years and over",
+    "Percent Imputed"
+  ],
+  "ignoreTokens XXXXX": [
+    "Estimate",
+    "OCCUPATION"
+  ]
+}

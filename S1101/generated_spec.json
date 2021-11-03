@@ -1,0 +1,35 @@
+{
+  "populationType": {
+    "_DEFAULT": "Person"
+  },
+  "measurement": {
+    "_DEFAULT": {
+      "measuredProperty": "count XXXXX",
+      "statType": "measuredValue"
+    },
+    "Margin of Error": {
+      "measuredProperty": "count",
+      "statType": "marginOfError"
+    }
+  },
+  "enumSpecializations": {},
+  "pvs": {
+    "age": {
+      "65 years and over": "[65 - Years]"
+    },
+    "statType": {
+      "Margin of Error": "marginOfError"
+    }
+  },
+  "inferredSpec": {},
+  "universePVs": [],
+  "denominators": {},
+  "ignoreColumns XXXXX": [
+    "Total",
+    "Total MOE"
+  ],
+  "ignoreTokens XXXXX": [
+    "HOUSING TENURE",
+    "Estimate"
+  ]
+}

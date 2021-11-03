@@ -1,0 +1,130 @@
+{
+  "populationType": {
+    "_DEFAULT": "Person"
+  },
+  "measurement": {
+    "_DEFAULT": {
+      "measuredProperty": "count XXXXX",
+      "statType": "measuredValue"
+    },
+    "Margin of Error": {
+      "measuredProperty": "count",
+      "statType": "marginOfError"
+    }
+  },
+  "enumSpecializations": {},
+  "pvs": {
+    "age": {
+      "Civilian employed population 16 years and over": "[16 - Years]"
+    },
+    "statType": {
+      "Margin of Error": "marginOfError"
+    },
+    "establishmentOwnership": {
+      "Employee of private company workers": "PrivatelyOwnedForProfit",
+      "Self-employed in own incorporated business workers": "PrivatelyOwnedForProfit",
+      "Private not-for-profit wage and salary workers": "PrivatelyOwnedNotForProfit",
+      "Self-employed in own not incorporated business workers and unpaid family workers": "PrivatelyOwned"
+    },
+    "workerClassification": {
+      "Employee of private company workers": "PaidEmployee",
+      "Self-employed in own incorporated business workers": "IncorporatedBusinessOwner",
+      "Private not-for-profit wage and salary workers": "PaidWorker",
+      "Self-employed in own not incorporated business workers and unpaid family workers": "UnincorporatedBusinessOwnerOrUnpaidFamilyWorker"
+    },
+    "employment": {
+      "Civilian employed population 16 years and over": "BLS_Employed"
+    },
+    "armedForcesStatus": {
+      "Civilian employed population 16 years and over": "Civilian"
+    },
+    "occupation": {
+      "Management, business, science, and arts occupations": "SOCv2018/highLevelAggregation-1",
+      "Service occupations": "SOCv2018/intermediateAggregation-5",
+      "Sales and office occupations": "SOCv2018/highLevelAggregation-3",
+      "Natural resources, construction, and maintenance occupations": "SOCv2018/highLevelAggregation-4",
+      "Production, transportation, and material moving occupations": "SOCv2018/highLevelAggregation-5"
+    }
+  },
+  "inferredSpec": {
+    "workerClassification": {
+      "age": "[16 - Years]",
+      "armedForcesStatus": "Civilian",
+      "employment": "BLS_Employed",
+      "workerStatus": "Worker"
+    },
+    "employment": {
+      "employmentStatus": "BLS_InLaborForce",
+      "age": "[16 - Years]"
+    },
+    "occupation": {
+      "age": "[16 - Years]",
+      "workerStatus": "Worker"
+    }
+  },
+  "universePVs": [
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "armedForcesStatus"
+      ],
+      "dependentPVs": {
+        "age": "[16 - Years]"
+      }
+    },
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "workerClassification"
+      ],
+      "dependentPVs": {
+        "age": "[16 - Years]",
+        "workerStatus": "Worker",
+        "employment": "BLS_Employed",
+        "armedForcesStatus": "Civilian"
+      }
+    },
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "employment"
+      ],
+      "dependentPVs": {
+        "age": "[16 - Years]"
+      }
+    },
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "armedForcesStatus"
+      ],
+      "dependentPVs": {
+        "age": "[16 - Years]",
+        "employmentStatus": "BLS_InLaborForce"
+      }
+    },
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "occupation"
+      ],
+      "dependentPVs": {
+        "age": "[16 - Years]",
+        "armedForcesStatus": "Civilian",
+        "employment": "BLS_Employed"
+      }
+    }
+  ],
+  "denominators": {},
+  "ignoreColumns XXXXX": [
+    "Total",
+    "Total MOE",
+    "PERCENT IMPUTED",
+    "Percent Imputed",
+    "PERCENT ALLOCATED"
+  ],
+  "ignoreTokens XXXXX": [
+    "Estimate",
+    "OCCUPATION"
+  ]
+}

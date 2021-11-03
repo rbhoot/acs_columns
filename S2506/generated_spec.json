@@ -1,0 +1,54 @@
+{
+  "populationType": {
+    "_DEFAULT": "Person"
+  },
+  "measurement": {
+    "_DEFAULT": {
+      "measuredProperty": "count XXXXX",
+      "statType": "measuredValue"
+    },
+    "Margin of Error": {
+      "measuredProperty": "count",
+      "statType": "marginOfError"
+    }
+  },
+  "enumSpecializations": {},
+  "pvs": {
+    "statType": {
+      "Margin of Error": "marginOfError"
+    },
+    "income": {
+      "$25,000 to $34,999": "[25000 34999 USDollar]",
+      "$35,000 to $49,999": "[35000 49999 USDollar]",
+      "$50,000 to $74,999": "[50000 74999 USDollar]",
+      "$75,000 or more": "[75000 - USDollar]",
+      "$75,000 to $99,999": "[75000 99999 USDollar]"
+    },
+    "earnings": {
+      "$25,000 to $34,999": "[25000 34999 USDollar]",
+      "$35,000 to $49,999": "[35000 49999 USDollar]",
+      "$75,000 to $99,999": "[75000 99999 USDollar]"
+    }
+  },
+  "inferredSpec": {},
+  "universePVs": [
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "income"
+      ],
+      "dependentPVs": {
+        "age": "[15 - Years]",
+        "incomeStatus": "WithIncome"
+      }
+    }
+  ],
+  "denominators": {},
+  "ignoreColumns XXXXX": [
+    "PERCENT IMPUTED",
+    "Percent Imputed"
+  ],
+  "ignoreTokens XXXXX": [
+    "Estimate"
+  ]
+}

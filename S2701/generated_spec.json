@@ -1,0 +1,247 @@
+{
+  "populationType": {
+    "_DEFAULT": "Person"
+  },
+  "measurement": {
+    "_DEFAULT": {
+      "measuredProperty": "count XXXXX",
+      "statType": "measuredValue"
+    },
+    "Margin of Error": {
+      "measuredProperty": "count",
+      "statType": "marginOfError"
+    }
+  },
+  "enumSpecializations": {},
+  "pvs": {
+    "age": {
+      "Under 19 years": "[- 19 Years]",
+      "Under 18 years": "[- 18 Years]",
+      "Under 6 years": "[- 6 Years]",
+      "6 to 17 years": "[6 17 Years]",
+      "6 to 18 years": "[6 18 Years]",
+      "18 to 64 years": "[18 64 Years]",
+      "19 to 64 years": "[19 64 Years]",
+      "18 to 24 years": "[18 24 Years]",
+      "19 to 25 years": "[19 25 Years]",
+      "25 to 34 years": "[25 34 Years]",
+      "26 to 34 years": "[26 34 Years]",
+      "35 to 44 years": "[35 44 Years]",
+      "45 to 54 years": "[45 54 Years]",
+      "55 to 64 years": "[55 64 Years]",
+      "65 years and older": "[65 - Years]",
+      "65 to 74 years": "[65 74 Years]",
+      "75 years and older": "[75 - Years]",
+      "Civilian noninstitutionalized population 25 years and over": "[25 - Years]"
+    },
+    "gender": {
+      "Male": "Male",
+      "Female": "Female"
+    },
+    "employmentStatus": {
+      "In labor force": "BLS_InLaborForce",
+      "Not in labor force": "BLS_NotInLaborForce"
+    },
+    "householdType": {
+      "Female householder, no husband present": "SingleMotherFamilyHousehold"
+    },
+    "race": {
+      "Hispanic or Latino (of any race)": "HispanicOrLatino",
+      "White alone, not Hispanic or Latino": "WhiteAloneNotHispanicOrLatino",
+      "One race": "OneRace",
+      "White alone": "WhiteAlone",
+      "Black or African American alone": "BlackOrAfricanAmericanAlone",
+      "American Indian and Alaska Native alone": "AmericanIndianOrAlaskaNativeAlone",
+      "Asian alone": "AsianAlone",
+      "Native Hawaiian and Other Pacific Islander alone": "NativeHawaiianOrOtherPacificIslanderAlone",
+      "Some other race alone": "SomeOtherRaceAlone",
+      "Two or more races": "TwoOrMoreRaces"
+    },
+    "statType": {
+      "Margin of Error": "marginOfError"
+    },
+    "employment": {
+      "Employed": "BLS_Employed",
+      "Unemployed": "BLS_Unemployed",
+      "Not in labor force": "BLS_Unemployed"
+    },
+    "armedForcesStatus": {
+      "Total civilian noninstitutionalized population": "Civilian",
+      "Civilian noninstitutionalized population 25 years and over": "Civilian"
+    },
+    "institutionalization": {
+      "Total civilian noninstitutionalized population": "USC_NonInstitutionalized",
+      "Civilian noninstitutionalized population 25 years and over": "USC_NonInstitutionalized"
+    },
+    "citizenship": {
+      "Native born": "USCitizenBornInTheUnitedStates",
+      "Naturalized": "USCitizenByNaturalization",
+      "Not a citizen": "NotAUSCitizen"
+    },
+    "nativity": {
+      "Native born": "USC_Native",
+      "Foreign born": "USC_ForeignBorn"
+    },
+    "disabilityStatus": {
+      "With a disability": "WithDisability",
+      "No disability": "NoDisability"
+    },
+    "educationalAttainment": {
+      "Less than high school graduate": "LessThanHighSchoolGraduate",
+      "High school graduate (includes equivalency)": "HighSchoolGraduateIncludesEquivalency",
+      "Some college or associate's degree": "SomeCollegeOrAssociatesDegree",
+      "Bachelor's degree or higher": "BachelorsDegreeOrHigher"
+    },
+    "workExperience": {
+      "Worked full-time, year round in the past 12 months": "USC_FullTimeYearRoundWorker",
+      "Worked less than full-time, year round in the past 12 months": "LessThanFullTimeYearRoundWorker",
+      "Did not work": "DidNotWork"
+    },
+    "income": {
+      "$50,000 to $74,999": "[50000 74999 USDollar]",
+      "Under $25,000": "[- 25000 USDollar]",
+      "$25,000 to $49,999": "[25000 49999 USDollar]",
+      "$75,000 to $99,999": "[75000 99999 USDollar]",
+      "$100,000 and over": "[100000 - USDollar]"
+    },
+    "povertyStatus": {
+      "Civilian noninstitutionalized population for whom poverty status is determined": "PovertyStatusDetermined"
+    },
+    "earnings": {
+      "$75,000 to $99,999": "[75000 99999 USDollar]"
+    },
+    "workStatus": {
+      "Did not work": "DidNotWork"
+    },
+    "householderRace": {
+      "One race": "OneRace",
+      "White alone": "WhiteAlone",
+      "Black or African American alone": "BlackOrAfricanAmericanAlone",
+      "American Indian and Alaska Native alone": "AmericanIndianOrAlaskaNativeAlone",
+      "Asian alone": "AsianAlone",
+      "Native Hawaiian and Other Pacific Islander alone": "NativeHawaiianOrOtherPacificIslanderAlone",
+      "Some other race alone": "SomeOtherRaceAlone",
+      "Two or more races": "TwoOrMoreRaces",
+      "White alone, not Hispanic or Latino": "WhiteAloneNotHispanicOrLatino"
+    },
+    "householderEducationalAttainment": {
+      "Less than high school graduate": "LessThanHighSchoolGraduate",
+      "High school graduate (includes equivalency)": "HighSchoolGraduateIncludesEquivalency",
+      "Bachelor's degree or higher": "BachelorsDegreeOrHigher"
+    }
+  },
+  "inferredSpec": {
+    "gender": {
+      "age": "[15 19 Years]"
+    },
+    "employmentStatus": {
+      "age": "[16 19 Years]"
+    },
+    "householdType": {
+      "age": "[15 19 Years]",
+      "residenceType": "Household"
+    },
+    "educationalAttainment": {
+      "age": "[25 - Years]"
+    },
+    "employment": {
+      "employmentStatus": "BLS_InLaborForce",
+      "age": "[16 - Years]"
+    },
+    "workExperience": {
+      "age": "[16 64 Years]"
+    },
+    "race": {
+      "age": "[1 - Years]"
+    },
+    "nativity": {
+      "age": "[1 - Years]"
+    },
+    "citizenship": {
+      "age": "[1 - Years]"
+    },
+    "povertyStatus": {
+      "age": "[1 - Years]"
+    },
+    "workStatus": {
+      "age": "[16 - Years]"
+    }
+  },
+  "universePVs": [
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "armedForcesStatus"
+      ],
+      "dependentPVs": {
+        "age": "[16 - Years]"
+      }
+    },
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "educationalAttainment"
+      ],
+      "dependentPVs": {
+        "age": "[25 - Years]"
+      }
+    },
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "income"
+      ],
+      "dependentPVs": {
+        "age": "[15 - Years]",
+        "incomeStatus": "WithIncome"
+      }
+    },
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "workStatus"
+      ],
+      "dependentPVs": {
+        "age": "[16 64 Years]"
+      }
+    },
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "employment"
+      ],
+      "dependentPVs": {
+        "age": "[16 - Years]"
+      }
+    },
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "armedForcesStatus"
+      ],
+      "dependentPVs": {
+        "age": "[16 - Years]",
+        "employmentStatus": "BLS_InLaborForce"
+      }
+    }
+  ],
+  "denominators": {},
+  "ignoreColumns XXXXX": [
+    "Total",
+    "Total MOE",
+    "PERCENT IMPUTED",
+    "Total Civilian Noninstitutionalized Population",
+    "Percent Imputed"
+  ],
+  "ignoreTokens XXXXX": [
+    "EDUCATIONAL ATTAINMENT",
+    "NATIVITY AND CITIZENSHIP STATUS",
+    "AGE",
+    "Estimate",
+    "RACE AND HISPANIC OR LATINO ORIGIN",
+    "SEX",
+    "Total civilian noninstitutionalized population",
+    "DISABILITY STATUS",
+    "EMPLOYMENT STATUS"
+  ]
+}

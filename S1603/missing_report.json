@@ -1,0 +1,42 @@
+{
+  "columns_missing_pv": [
+    "Speak a language other than English at home!!Percent speak Spanish at home!!Estimate!!Total population 5 years and over",
+    "Estimate!!Speak a language other than English at home!!Total!!Total population 5 years and over",
+    "Speak a language other than English at home!!Percent!!Estimate!!Total population 5 years and over",
+    "Estimate!!Total!!Total population 5 years and over",
+    "Total!!Estimate!!PERCENT IMPUTED!!Language status",
+    "Speak a language other than English at home!!Total!!Estimate!!Total population 5 years and over",
+    "Estimate!!Percent speak only English at home!!Total population 5 years and over",
+    "Percent distribution of people who speak a language other than English at home!!Total!!Estimate!!Total population 5 years and over",
+    "Estimate!!Speak a language other than English at home!!Percent!!Total population 5 years and over",
+    "Percent distribution of people who speak a language other than English at home!!Total!!Estimate!!PERCENT IMPUTED!!Language status",
+    "Estimate!!Speak a language other than English at home!!Percent speak Spanish at home!!Total population 5 years and over",
+    "Estimate!!Total!!Speak a language other than English at home!!Total population 5 years and over",
+    "Estimate!!Percent!!Speak a language other than English at home!!Total population 5 years and over",
+    "Estimate!!Percent speak Spanish at home!!Speak a language other than English at home!!Total population 5 years and over",
+    "Percent speak only English at home!!Estimate!!Total population 5 years and over",
+    "Total!!Estimate!!PERCENT IMPUTED!!Language status (speak a language other than English)",
+    "Total!!Estimate!!Total population 5 years and over",
+    "Percent distribution of people who speak a language other than English at home!!Total!!Estimate!!PERCENT IMPUTED!!Language status (speak a language other than English)"
+  ],
+  "missing_tokens": [
+    "Estimate",
+    "Total population 5 years and over",
+    "CITIZENSHIP STATUS",
+    "POVERTY STATUS IN THE PAST 12 MONTHS",
+    "AGE",
+    "EDUCATIONAL ATTAINMENT",
+    "PERCENT IMPUTED",
+    "Language status (speak a language other than English)",
+    "Language status",
+    "Total",
+    "NATIVITY AND CITIZENSHIP STATUS",
+    "Percent speak only English at home",
+    "Percent",
+    "Percent speak Spanish at home",
+    "Total MOE",
+    "Percent speak only English at home MOE",
+    "Percent MOE",
+    "Percent speak Spanish at home MOE"
+  ]
+}

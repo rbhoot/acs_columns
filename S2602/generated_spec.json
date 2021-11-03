@@ -1,0 +1,345 @@
+{
+  "populationType": {
+    "_DEFAULT": "Person"
+  },
+  "measurement": {
+    "_DEFAULT": {
+      "measuredProperty": "count XXXXX",
+      "statType": "measuredValue"
+    },
+    "Margin of Error": {
+      "measuredProperty": "count",
+      "statType": "marginOfError"
+    },
+    "Median earnings (dollars)": {
+      "measuredProperty": "earnings",
+      "incomeStatus": "WithEarnings",
+      "statType": "medianValue",
+      "unit": "USDollar"
+    },
+    "Median age (years)": {
+      "measuredProperty": "age",
+      "statType": "medianValue",
+      "unit": "Years"
+    },
+    "Mean earnings (dollars)": {
+      "statType": "meanValue",
+      "measuredProperty": "earnings",
+      "incomeStatus": "WithEarnings",
+      "age": "[16 - Years]",
+      "workStatus": "USC_FullTimeYearRoundWorker",
+      "unit": "USDollar"
+    },
+    "Median earnings (dollars):": {
+      "measuredProperty": "earnings",
+      "statType": "medianValue",
+      "unit": "USDollar",
+      "incomeStatus": "WithEarnings"
+    },
+    "Mean earnings (dollars):": {
+      "measuredProperty": "earnings",
+      "statType": "meanValue",
+      "unit": "USDollar",
+      "incomeStatus": "WithEarnings"
+    }
+  },
+  "enumSpecializations": {
+    "White": "One race",
+    "Black or African American": "One race",
+    "American Indian and Alaska Native": "One race",
+    "Asian": "One race",
+    "Native Hawaiian and Other Pacific Islander": "One race",
+    "Some other race": "One race"
+  },
+  "pvs": {
+    "age": {
+      "Civilian employed population 16 years and over": "[16 - Years]",
+      "Under 18 years": "[- 18 Years]",
+      "18 to 24 years": "[18 24 Years]",
+      "25 to 34 years": "[25 34 Years]",
+      "35 to 44 years": "[35 44 Years]",
+      "45 to 54 years": "[45 54 Years]",
+      "55 to 64 years": "[55 64 Years]",
+      "65 to 74 years": "[65 74 Years]",
+      "Population 1 year and over": "[1 - Years]",
+      "Population 25 years and over": "[25 - Years]",
+      "Population 15 years and over": "[15 - Years]",
+      "65 years and over": "[65 - Years]",
+      "Population 18 to 64 years": "[18 64 Years]",
+      "Population 65 years and over": "[65 - Years]",
+      "Under 15 years": "[- 15 Years]",
+      "15 to 17 years": "[15 17 Years]",
+      "75 to 84 years": "[75 84 Years]",
+      "85 years and over": "[85 - Years]",
+      "Population 5 years and over": "[5 - Years]",
+      "Population 16 years and over": "[16 - Years]",
+      "Civilian population 18 years and over": "[18 - Years]"
+    },
+    "gender": {
+      "Male": "Male",
+      "Female": "Female"
+    },
+    "maritalStatus": {
+      "Widowed": "Widowed",
+      "Never married": "NeverMarried",
+      "Now married, except separated": "MarriedAndNotSeparated",
+      "Separated": "Separated",
+      "Divorced": "Divorced"
+    },
+    "employmentStatus": {
+      "In labor force": "BLS_InLaborForce",
+      "Not in labor force": "BLS_NotInLaborForce",
+      "Civilian labor force": "BLS_InLaborForce"
+    },
+    "race": {
+      "Black or African American": "BlackOrAfricanAmericanAlone",
+      "Hispanic or Latino (of any race)": "HispanicOrLatino",
+      "White alone, not Hispanic or Latino": "WhiteAloneNotHispanicOrLatino",
+      "One race": "OneRace",
+      "Two or more races": "TwoOrMoreRaces",
+      "White": "WhiteAlone",
+      "American Indian and Alaska Native": "AmericanIndianOrAlaskaNativeAlone",
+      "Asian": "AsianAlone",
+      "Native Hawaiian and Other Pacific Islander": "NativeHawaiianOrOtherPacificIslanderAlone",
+      "Some other race": "SomeOtherRaceAlone"
+    },
+    "residenceType": {
+      "RESIDENCE 1 YEAR AGO": "Household"
+    },
+    "statType": {
+      "Margin of Error": "marginOfError"
+    },
+    "employment": {
+      "Civilian employed population 16 years and over": "BLS_Employed",
+      "Employed": "BLS_Employed",
+      "Unemployed": "BLS_Unemployed",
+      "Not in labor force": "BLS_Unemployed"
+    },
+    "armedForcesStatus": {
+      "Civilian employed population 16 years and over": "Civilian",
+      "Civilian population 18 years and over": "Civilian",
+      "Civilian labor force": "Civilian",
+      "Armed Forces": "InArmedForces",
+      "Civilian veteran": "Civilian"
+    },
+    "citizenship": {
+      "Naturalized U.S. citizen": "USCitizenByNaturalization",
+      "Native": "USCitizenBornInTheUnitedStates",
+      "Not a U.S. citizen": "NotAUSCitizen"
+    },
+    "nativity": {
+      "Foreign born": "USC_ForeignBorn",
+      "Native": "USC_Native"
+    },
+    "disabilityStatus": {
+      "With a disability": "WithDisability",
+      "No disability": "NoDisability"
+    },
+    "residentStatus": {
+      "Same county": "DifferentHouseInSameCounty",
+      "Different county": "DifferentHouseInDifferentCounty",
+      "Same state": "DifferentHouseInDifferentCountySameState",
+      "Different state": "DifferentHouseInDifferentCountyDifferentState",
+      "Abroad": "DifferentHouseAbroad",
+      "Different address in the United States": "DifferentHouseInTheUS",
+      "Same address": "SameHouse1YearAgo"
+    },
+    "educationalAttainment": {
+      "Bachelor's degree or higher": "BachelorsDegreeOrHigher",
+      "High school graduate or higher": "HighSchoolGraduateOrHigher"
+    },
+    "occupation": {
+      "Management, business, science, and arts occupations": "SOCv2018/highLevelAggregation-1",
+      "Service occupations": "SOCv2018/intermediateAggregation-5",
+      "Sales and office occupations": "SOCv2018/highLevelAggregation-3",
+      "Production, transportation, and material moving occupations": "SOCv2018/highLevelAggregation-5",
+      "Natural resources, construction, extraction, and maintenance occupations": "SOCv2018/highLevelAggregation-4"
+    },
+    "incomeStatus": {
+      "With earnings": "WithEarnings",
+      "With earnings:": "WithEarnings"
+    },
+    "languageSpokenAtHome": {
+      "English only": "OnlyEnglish",
+      "Language other than English": "LanguageOtherThanEnglish"
+    },
+    "householderRace": {
+      "One race": "OneRace",
+      "White": "WhiteAlone",
+      "Black or African American": "BlackOrAfricanAmericanAlone",
+      "American Indian and Alaska Native": "AmericanIndianOrAlaskaNativeAlone",
+      "Asian": "AsianAlone",
+      "Native Hawaiian and Other Pacific Islander": "NativeHawaiianOrOtherPacificIslanderAlone",
+      "Some other race": "SomeOtherRaceAlone",
+      "Two or more races": "TwoOrMoreRaces",
+      "White alone, not Hispanic or Latino": "WhiteAloneNotHispanicOrLatino"
+    },
+    "benefitsStatus": {
+      "With Food Stamp/SNAP benefits": "WithFoodStampsInThePast12Months"
+    },
+    "householderEducationalAttainment": {
+      "Bachelor's degree or higher": "BachelorsDegreeOrHigher"
+    },
+    "schoolEnrollment XXXXX": {
+      "Population 3 years and over enrolled in school": "EnrolledInSchool",
+      "Nursery school through 12th grade": "XXXXXEnrolledInSchool"
+    },
+    "collegeOrGraduateSchoolEnrollment XXXXX": {
+      "College or graduate school": "EnrolledInCollegeOrGraduateSchool"
+    },
+    "veteranStatus": {
+      "Civilian veteran": "Veteran"
+    },
+    "residentType": {
+      "Total group quarters population": "GroupQuarters",
+      "Total group quarters population MOE": "GroupQuarters",
+      "Adult correctional facilities": "AdultCorrectionalFacilities",
+      "Adult correctional facilities MOE": "AdultCorrectionalFacilities",
+      "Nursing facilities/skilled nursing facilities": "NursingFacilities",
+      "Nursing facilities/skilled nursing facilities MOE": "NursingFacilities",
+      "College/university housing": "CollegeOrUniversityStudentHousing",
+      "College/university housing MOE": "CollegeOrUniversityStudentHousing"
+    }
+  },
+  "inferredSpec": {
+    "gender": {
+      "age": "[15 19 Years]"
+    },
+    "employmentStatus": {
+      "age": "[16 19 Years]"
+    },
+    "residentStatus": {
+      "residenceType": "Household",
+      "age": "[1 - Years]"
+    },
+    "educationalAttainment": {
+      "age": "[25 - Years]"
+    },
+    "employment": {
+      "employmentStatus": "BLS_InLaborForce",
+      "age": "[16 - Years]"
+    },
+    "occupation": {
+      "age": "[16 - Years]",
+      "workerStatus": "Worker"
+    },
+    "race": {
+      "age": "[1 - Years]"
+    },
+    "nativity": {
+      "age": "[1 - Years]"
+    },
+    "citizenship": {
+      "age": "[1 - Years]"
+    },
+    "residenceType": {
+      "age": "[1 - Years]"
+    }
+  },
+  "universePVs": [
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "armedForcesStatus"
+      ],
+      "dependentPVs": {
+        "age": "[16 - Years]"
+      }
+    },
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "educationalAttainment"
+      ],
+      "dependentPVs": {
+        "age": "[25 - Years]"
+      }
+    },
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "maritalStatus"
+      ],
+      "dependentPVs": {
+        "age": "[15 - Years]"
+      }
+    },
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "employment"
+      ],
+      "dependentPVs": {
+        "age": "[16 - Years]"
+      }
+    },
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "veteranStatus"
+      ],
+      "dependentPVs": {
+        "age": "[18 - Years]",
+        "armedForcesStatus": "Civilian"
+      }
+    },
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "armedForcesStatus"
+      ],
+      "dependentPVs": {
+        "age": "[16 - Years]",
+        "employmentStatus": "BLS_InLaborForce"
+      }
+    },
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "languageSpokenAtHome"
+      ],
+      "dependentPVs": {
+        "age": "[5 - Years]"
+      }
+    },
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "residentStatus"
+      ],
+      "dependentPVs": {
+        "age": "[1 - Years]"
+      }
+    },
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "occupation"
+      ],
+      "dependentPVs": {
+        "age": "[16 - Years]",
+        "armedForcesStatus": "Civilian",
+        "employment": "BLS_Employed"
+      }
+    }
+  ],
+  "denominators": {},
+  "ignoreColumns XXXXX": [
+    "Percent of civilian labor force"
+  ],
+  "ignoreTokens XXXXX": [
+    "MARITAL STATUS",
+    "EDUCATIONAL ATTAINMENT",
+    "Estimate",
+    "DISABILITY STATUS",
+    "OCCUPATION",
+    "LANGUAGE SPOKEN AT HOME AND ABILITY TO SPEAK ENGLISH",
+    "SCHOOL ENROLLMENT",
+    "EMPLOYMENT STATUS",
+    "RESIDENCE 1 YEAR AGO",
+    "PLACE OF BIRTH, NATIVITY AND CITIZENSHIP STATUS, AND YEAR OF ENTRY",
+    "SEX AND AGE",
+    "RACE AND HISPANIC ORIGIN OR LATINO ORIGIN",
+    "VETERAN STATUS"
+  ]
+}

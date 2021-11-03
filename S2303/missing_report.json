@@ -1,0 +1,23 @@
+{
+  "columns_missing_pv": [
+    "Total!!Estimate!!PERCENT IMPUTED!!Work status in the past 12 months for the population 16 years and over",
+    "Total!!Estimate!!PERCENT IMPUTED!!Hours worked per week in the past 12 months for the population 16 years and over",
+    "Total!!Estimate!!PERCENT IMPUTED!!Weeks worked in the past 12 months for the population 16 years and over"
+  ],
+  "missing_tokens": [
+    "Total",
+    "Estimate",
+    "PERCENT IMPUTED",
+    "Work status in the past 12 months for the population 16 years and over",
+    "Weeks worked in the past 12 months for the population 16 years and over",
+    "Hours worked per week in the past 12 months for the population 16 years and over",
+    "Percent Male",
+    "Percent Female",
+    "Percent Total",
+    "Total MOE",
+    "Percent Male MOE",
+    "Percent Female MOE",
+    "Percent MOE",
+    "Percent"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "populationType": {
+    "_DEFAULT": "Person"
+  },
+  "measurement": {
+    "_DEFAULT": {
+      "measuredProperty": "count XXXXX",
+      "statType": "measuredValue"
+    },
+    "Margin of Error": {
+      "measuredProperty": "count",
+      "statType": "marginOfError"
+    }
+  },
+  "enumSpecializations": {},
+  "pvs": {
+    "statType": {
+      "Margin of Error": "marginOfError"
+    }
+  },
+  "inferredSpec": {},
+  "universePVs": [],
+  "denominators": {},
+  "ignoreColumns XXXXX": [
+    "PERCENT IMPUTED",
+    "Percent Imputed"
+  ],
+  "ignoreTokens XXXXX": [
+    "Estimate"
+  ]
+}

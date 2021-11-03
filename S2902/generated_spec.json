@@ -1,0 +1,70 @@
+{
+  "populationType": {
+    "_DEFAULT": "Person"
+  },
+  "measurement": {
+    "_DEFAULT": {
+      "measuredProperty": "count XXXXX",
+      "statType": "measuredValue"
+    },
+    "Margin of Error": {
+      "measuredProperty": "count",
+      "statType": "marginOfError"
+    }
+  },
+  "enumSpecializations": {},
+  "pvs": {
+    "age": {
+      "65 years and over": "[65 - Years]"
+    },
+    "gender": {
+      "Male": "Male",
+      "Female": "Female"
+    },
+    "statType": {
+      "Margin of Error": "marginOfError"
+    },
+    "educationalAttainment": {
+      "High school graduate (includes equivalency)": "HighSchoolGraduateIncludesEquivalency",
+      "Bachelor's degree or higher": "BachelorsDegreeOrHigher",
+      "Bachelor's degree": "BachelorsDegree",
+      "Graduate or professional degree": "GraduateOrProfessionalDegree"
+    },
+    "householderEducationalAttainment": {
+      "High school graduate (includes equivalency)": "HighSchoolGraduateIncludesEquivalency",
+      "Bachelor's degree or higher": "BachelorsDegreeOrHigher"
+    }
+  },
+  "inferredSpec": {
+    "gender": {
+      "age": "[15 19 Years]"
+    },
+    "educationalAttainment": {
+      "age": "[25 - Years]"
+    }
+  },
+  "universePVs": [
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "educationalAttainment"
+      ],
+      "dependentPVs": {
+        "age": "[25 - Years]"
+      }
+    }
+  ],
+  "denominators": {},
+  "ignoreColumns XXXXX": [
+    "Total",
+    "Total MOE",
+    "Percent",
+    "Percent MOE"
+  ],
+  "ignoreTokens XXXXX": [
+    "EDUCATIONAL ATTAINMENT",
+    "AGE",
+    "Estimate",
+    "SEX"
+  ]
+}

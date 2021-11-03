@@ -1,0 +1,29 @@
+{
+  "columns_missing_pv": [
+    "Estimate!!Percent Female!!Full-time, year-round civilian employed population 16 years and over",
+    "Estimate!!Percent Male!!Full-time, year-round civilian employed population 16 years and over",
+    "Total!!Estimate!!PERCENT IMPUTED!!Class of worker",
+    "Median earnings (dollars) for male!!Estimate!!Full-time, year-round civilian employed population 16 years and over",
+    "Median earnings (dollars) for female!!Estimate!!PERCENT IMPUTED!!Class of worker",
+    "Median earnings (dollars)!!Estimate!!PERCENT IMPUTED!!Class of worker",
+    "Estimate!!Total!!Full-time, year-round civilian employed population 16 years and over",
+    "Median earnings (dollars) for female!!Estimate!!Full-time, year-round civilian employed population 16 years and over",
+    "Percent Male!!Estimate!!Full-time, year-round civilian employed population 16 years and over",
+    "Percent Female!!Estimate!!Full-time, year-round civilian employed population 16 years and over",
+    "Median earnings (dollars)!!Estimate!!Full-time, year-round civilian employed population 16 years and over",
+    "Median earnings (dollars) for male!!Estimate!!PERCENT IMPUTED!!Class of worker",
+    "Total!!Estimate!!Full-time, year-round civilian employed population 16 years and over"
+  ],
+  "missing_tokens": [
+    "Full-time, year-round civilian employed population 16 years and over",
+    "Estimate",
+    "PERCENT IMPUTED",
+    "Class of worker",
+    "Total",
+    "Percent Female",
+    "Percent Male",
+    "Percent Female MOE",
+    "Percent Male MOE",
+    "Total MOE"
+  ]
+}

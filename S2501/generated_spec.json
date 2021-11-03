@@ -1,0 +1,43 @@
+{
+  "populationType": {
+    "_DEFAULT": "Person"
+  },
+  "measurement": {
+    "_DEFAULT": {
+      "measuredProperty": "count XXXXX",
+      "statType": "measuredValue"
+    },
+    "Margin of Error": {
+      "measuredProperty": "count",
+      "statType": "marginOfError"
+    }
+  },
+  "enumSpecializations": {},
+  "pvs": {
+    "householdType": {
+      "Female householder, no spouse present": "SingleMotherFamilyHousehold",
+      "Female householder, no husband present": "SingleMotherFamilyHousehold"
+    },
+    "statType": {
+      "Margin of Error": "marginOfError"
+    },
+    "householderAge": {
+      "Householder 65 years and over": "[65 - Years]"
+    }
+  },
+  "inferredSpec": {
+    "householdType": {
+      "age": "[15 19 Years]",
+      "residenceType": "Household"
+    }
+  },
+  "universePVs": [],
+  "denominators": {},
+  "ignoreColumns XXXXX": [
+    "PERCENT IMPUTED",
+    "Percent Imputed"
+  ],
+  "ignoreTokens XXXXX": [
+    "Estimate"
+  ]
+}

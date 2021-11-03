@@ -1,0 +1,38 @@
+{
+  "columns_missing_pv": [
+    "Total!!Estimate!!PERCENT IMPUTED!!Disability status",
+    "Total!!Estimate!!PERCENT IMPUTED!!Cognitive difficulty",
+    "Percent with a disability!!Estimate!!PERCENT IMPUTED!!Disability status",
+    "Total!!Estimate!!PERCENT IMPUTED!!Ambulatory difficulty",
+    "Percent with a disability!!Estimate!!PERCENT IMPUTED!!Ambulatory difficulty",
+    "Percent with a disability!!Estimate!!PERCENT IMPUTED!!Self-care difficulty",
+    "Total!!Estimate!!PERCENT IMPUTED!!Vision difficulty",
+    "Total!!Estimate!!PERCENT IMPUTED!!Hearing difficulty",
+    "Percent with a disability!!Estimate!!PERCENT IMPUTED!!Vision difficulty",
+    "Percent with a disability!!Estimate!!PERCENT IMPUTED!!Cognitive difficulty",
+    "Total!!Estimate!!PERCENT IMPUTED!!Self-care difficulty",
+    "Total!!Estimate!!PERCENT IMPUTED!!Independent living difficulty",
+    "Percent with a disability!!Estimate!!PERCENT IMPUTED!!Independent living difficulty",
+    "Percent with a disability!!Estimate!!PERCENT IMPUTED!!Hearing difficulty"
+  ],
+  "missing_tokens": [
+    "Total",
+    "Estimate",
+    "RACE AND HISPANIC OR LATINO ORIGIN",
+    "SEX",
+    "PERCENT IMPUTED",
+    "Self-care difficulty",
+    "Ambulatory difficulty",
+    "Independent living difficulty",
+    "Cognitive difficulty",
+    "Hearing difficulty",
+    "Vision difficulty",
+    "Disability status",
+    "Percent with a disability",
+    "DISABILITY TYPE BY DETAILED AGE",
+    "AGE",
+    "Subject",
+    "Total MOE",
+    "Percent with a disability MOE"
+  ]
+}

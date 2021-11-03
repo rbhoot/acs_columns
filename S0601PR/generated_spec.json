@@ -1,0 +1,191 @@
+{
+  "populationType": {
+    "_DEFAULT": "Person"
+  },
+  "measurement": {
+    "_DEFAULT": {
+      "measuredProperty": "count XXXXX",
+      "statType": "measuredValue"
+    },
+    "Margin of Error": {
+      "measuredProperty": "count",
+      "statType": "marginOfError"
+    },
+    "Median age (years)": {
+      "measuredProperty": "age",
+      "statType": "medianValue",
+      "unit": "Years"
+    },
+    "Median income (dollars)": {
+      "measuredProperty": "income",
+      "statType": "medianValue",
+      "age": "[15 - Years]",
+      "incomeStatus": "WithIncome",
+      "unit": "USDollar"
+    }
+  },
+  "enumSpecializations": {
+    "White": "One race",
+    "Black or African American": "One race",
+    "American Indian and Alaska Native": "One race",
+    "Asian": "One race",
+    "Native Hawaiian and Other Pacific Islander": "One race",
+    "Some other race": "One race"
+  },
+  "pvs": {
+    "age": {
+      "18 to 24 years": "[18 24 Years]",
+      "45 to 54 years": "[45 54 Years]",
+      "55 to 64 years": "[55 64 Years]",
+      "65 to 74 years": "[65 74 Years]",
+      "5 to 17 years": "[5 17 Years]",
+      "75 years and over": "[75 - Years]",
+      "Population 25 years and over": "[25 - Years]",
+      "Population 15 years and over": "[15 - Years]",
+      "Under 5 years": "[- 5 Years]",
+      "Population 5 years and over": "[5 - Years]"
+    },
+    "gender": {
+      "Male": "Male",
+      "Female": "Female"
+    },
+    "maritalStatus": {
+      "Widowed": "Widowed",
+      "Divorced or separated": "DivorcedOrSeparated",
+      "Never married": "NeverMarried",
+      "Now married, except separated": "MarriedAndNotSeparated"
+    },
+    "race": {
+      "Black or African American": "BlackOrAfricanAmericanAlone",
+      "Hispanic or Latino origin (of any race)": "HispanicOrLatino",
+      "White alone, not Hispanic or Latino": "WhiteAloneNotHispanicOrLatino",
+      "One race": "OneRace",
+      "Two or more races": "TwoOrMoreRaces",
+      "White": "WhiteAlone",
+      "American Indian and Alaska Native": "AmericanIndianOrAlaskaNativeAlone",
+      "Asian": "AsianAlone",
+      "Native Hawaiian and Other Pacific Islander": "NativeHawaiianOrOtherPacificIslanderAlone",
+      "Some other race": "SomeOtherRaceAlone"
+    },
+    "statType": {
+      "Margin of Error": "marginOfError"
+    },
+    "educationalAttainment": {
+      "Less than high school graduate": "LessThanHighSchoolGraduate",
+      "High school graduate (includes equivalency)": "HighSchoolGraduateIncludesEquivalency",
+      "Some college or associate's degree": "SomeCollegeOrAssociatesDegree",
+      "Bachelor's degree": "BachelorsDegree",
+      "Graduate or professional degree": "GraduateOrProfessionalDegree"
+    },
+    "income": {
+      "$15,000 to $24,999": "[15000 24999 USDollar]",
+      "$25,000 to $34,999": "[25000 34999 USDollar]",
+      "$35,000 to $49,999": "[35000 49999 USDollar]",
+      "$75,000 or more": "[75000 - USDollar]",
+      "$1 to $9,999 or loss": "[- 9999 USDollar]",
+      "$10,000 to $14,999": "[10000 14999 USDollar]",
+      "$50,000 to $64,999": "[50000 64999 USDollar]",
+      "$65,000 to $74,999": "[65000 74999 USDollar]"
+    },
+    "povertyStatus": {
+      "100 to 149 percent of the poverty level": "[1 1.49 RatioToPovertyLine]",
+      "Below 100 percent of the poverty level": "[- 1 RatioToPovertyLine]",
+      "At or above 150 percent of the poverty level": "[1.5 - RatioToPovertyLine]"
+    },
+    "earnings": {
+      "$1 to $9,999 or loss": "[- 9999 USDollar]",
+      "$10,000 to $14,999": "[10000 14999 USDollar]",
+      "$15,000 to $24,999": "[15000 34999 USDollar]",
+      "$25,000 to $34,999": "[25000 34999 USDollar]",
+      "$35,000 to $49,999": "[35000 49999 USDollar]",
+      "$50,000 to $64,999": "[50000 64999 USDollar]",
+      "$65,000 to $74,999": "[65000 74999 USDollar]"
+    },
+    "householderRace": {
+      "One race": "OneRace",
+      "White": "WhiteAlone",
+      "Black or African American": "BlackOrAfricanAmericanAlone",
+      "American Indian and Alaska Native": "AmericanIndianOrAlaskaNativeAlone",
+      "Asian": "AsianAlone",
+      "Native Hawaiian and Other Pacific Islander": "NativeHawaiianOrOtherPacificIslanderAlone",
+      "Some other race": "SomeOtherRaceAlone",
+      "Two or more races": "TwoOrMoreRaces",
+      "Hispanic or Latino origin (of any race)": "HispanicOrLatino",
+      "White alone, not Hispanic or Latino": "WhiteAloneNotHispanicOrLatino"
+    },
+    "householderEducationalAttainment": {
+      "Less than high school graduate": "LessThanHighSchoolGraduate",
+      "High school graduate (includes equivalency)": "HighSchoolGraduateIncludesEquivalency"
+    }
+  },
+  "inferredSpec": {
+    "gender": {
+      "age": "[15 19 Years]"
+    },
+    "educationalAttainment": {
+      "age": "[25 - Years]"
+    },
+    "race": {
+      "age": "[1 - Years]"
+    },
+    "povertyStatus": {
+      "age": "[1 - Years]"
+    }
+  },
+  "universePVs": [
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "educationalAttainment"
+      ],
+      "dependentPVs": {
+        "age": "[25 - Years]"
+      }
+    },
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "maritalStatus"
+      ],
+      "dependentPVs": {
+        "age": "[15 - Years]"
+      }
+    },
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "income"
+      ],
+      "dependentPVs": {
+        "age": "[15 - Years]",
+        "incomeStatus": "WithIncome"
+      }
+    }
+  ],
+  "denominators": {},
+  "ignoreColumns XXXXX": [
+    "Total",
+    "Total MOE",
+    "PERCENT IMPUTED",
+    "Percent Imputed",
+    "PERCENT ALLOCATED",
+    "Estimate!!Total!!MARITAL STATUS!!Population 15 years and over",
+    "Margin of Error!!Total!!MARITAL STATUS!!Population 15 years and over",
+    "Margin of Error!!Total MOE!!MARITAL STATUS!!Population 15 years and over",
+    "Total!!Estimate!!MARITAL STATUS!!Population 15 years and over",
+    "Total!!Margin of Error!!MARITAL STATUS!!Population 15 years and over",
+    "Total!!Margin of Error!!Median income (dollars)",
+    "Total!!Margin of Error!!Median age (years)"
+  ],
+  "ignoreTokens XXXXX": [
+    "MARITAL STATUS",
+    "CITIZENSHIP STATUS",
+    "POVERTY STATUS IN THE PAST 12 MONTHS",
+    "EDUCATIONAL ATTAINMENT",
+    "AGE",
+    "Estimate",
+    "RACE AND HISPANIC OR LATINO ORIGIN",
+    "SEX",
+    "LANGUAGE SPOKEN AT HOME AND ABILITY TO SPEAK ENGLISH"
+  ]
+}

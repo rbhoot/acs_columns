@@ -1,0 +1,162 @@
+{
+  "populationType": {
+    "_DEFAULT": "Person"
+  },
+  "measurement": {
+    "_DEFAULT": {
+      "measuredProperty": "count XXXXX",
+      "statType": "measuredValue"
+    },
+    "Margin of Error": {
+      "measuredProperty": "count",
+      "statType": "marginOfError"
+    },
+    "Median earnings (dollars)": {
+      "measuredProperty": "earnings",
+      "incomeStatus": "WithEarnings",
+      "statType": "medianValue",
+      "unit": "USDollar"
+    }
+  },
+  "enumSpecializations": {
+    "White": "One race",
+    "Black or African American": "One race",
+    "American Indian and Alaska Native": "One race",
+    "Asian": "One race",
+    "Native Hawaiian and Other Pacific Islander": "One race",
+    "Some other race": "One race"
+  },
+  "pvs": {
+    "age": {
+      "Population 25 years and over with earnings": "WithEarnings"
+    },
+    "gender": {
+      "Male": "Male",
+      "Female": "Female",
+      "Male MOE": "Male",
+      "Female MOE": "Female"
+    },
+    "race": {
+      "Black or African American": "BlackOrAfricanAmericanAlone",
+      "Hispanic or Latino origin (of any race)": "HispanicOrLatino",
+      "White alone, not Hispanic or Latino": "WhiteAloneNotHispanicOrLatino",
+      "One race": "OneRace",
+      "Two or more races": "TwoOrMoreRaces",
+      "White": "WhiteAlone",
+      "American Indian and Alaska Native": "AmericanIndianOrAlaskaNativeAlone",
+      "Asian": "AsianAlone",
+      "Native Hawaiian and Other Pacific Islander": "NativeHawaiianOrOtherPacificIslanderAlone",
+      "Some other race": "SomeOtherRaceAlone"
+    },
+    "statType": {
+      "Margin of Error": "marginOfError"
+    },
+    "establishmentOwnership": {
+      "Employee of private company workers": "PrivatelyOwnedForProfit",
+      "Private not-for-profit wage and salary workers": "PrivatelyOwnedNotForProfit",
+      "Local government workers": "LocalGovernmentOwned",
+      "State government workers": "StateGovernmentOwned",
+      "Federal government workers": "FederalGovernmentOwned"
+    },
+    "workerClassification": {
+      "Employee of private company workers": "PaidEmployee",
+      "Private not-for-profit wage and salary workers": "PaidWorker",
+      "Local government workers": "Worker",
+      "State government workers": "Worker",
+      "Federal government workers": "Worker"
+    },
+    "educationalAttainment": {
+      "Less than high school graduate": "LessThanHighSchoolGraduate",
+      "High school graduate (includes equivalency)": "HighSchoolGraduateIncludesEquivalency",
+      "Some college or associate's degree": "SomeCollegeOrAssociatesDegree",
+      "Bachelor's degree": "BachelorsDegree",
+      "Graduate or professional degree": "GraduateOrProfessionalDegree"
+    },
+    "naics": {
+      "Construction": "NAICS/23",
+      "Manufacturing": "NAICS/33",
+      "Wholesale trade": "NAICS/42",
+      "Retail trade": "NAICS/44-45",
+      "Information": "NAICS/51",
+      "Other services (except public administration)": "NAICS/81",
+      "Public administration": "NAICS/92"
+    },
+    "incomeStatus": {
+      "Population 25 years and over with earnings": "[25 - Years]"
+    },
+    "householderRace": {
+      "One race": "OneRace",
+      "White": "WhiteAlone",
+      "Black or African American": "BlackOrAfricanAmericanAlone",
+      "American Indian and Alaska Native": "AmericanIndianOrAlaskaNativeAlone",
+      "Asian": "AsianAlone",
+      "Native Hawaiian and Other Pacific Islander": "NativeHawaiianOrOtherPacificIslanderAlone",
+      "Some other race": "SomeOtherRaceAlone",
+      "Two or more races": "TwoOrMoreRaces",
+      "Hispanic or Latino origin (of any race)": "HispanicOrLatino",
+      "White alone, not Hispanic or Latino": "WhiteAloneNotHispanicOrLatino"
+    },
+    "householderEducationalAttainment": {
+      "Less than high school graduate": "LessThanHighSchoolGraduate",
+      "High school graduate (includes equivalency)": "HighSchoolGraduateIncludesEquivalency"
+    }
+  },
+  "inferredSpec": {
+    "gender": {
+      "age": "[15 19 Years]"
+    },
+    "workerClassification": {
+      "age": "[16 - Years]",
+      "armedForcesStatus": "Civilian",
+      "employment": "BLS_Employed",
+      "workerStatus": "Worker"
+    },
+    "educationalAttainment": {
+      "age": "[25 - Years]"
+    },
+    "naics": {
+      "age": "[16 - Years]",
+      "workerStatus": "Worker"
+    },
+    "race": {
+      "age": "[1 - Years]"
+    }
+  },
+  "universePVs": [
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "workerClassification"
+      ],
+      "dependentPVs": {
+        "age": "[16 - Years]",
+        "workerStatus": "Worker",
+        "employment": "BLS_Employed",
+        "armedForcesStatus": "Civilian"
+      }
+    },
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "educationalAttainment"
+      ],
+      "dependentPVs": {
+        "age": "[25 - Years]"
+      }
+    }
+  ],
+  "denominators": {},
+  "ignoreColumns XXXXX": [
+    "Total",
+    "Total MOE",
+    "PERCENT IMPUTED",
+    "Percent Imputed",
+    "PERCENT ALLOCATED"
+  ],
+  "ignoreTokens XXXXX": [
+    "EDUCATIONAL ATTAINMENT",
+    "Estimate",
+    "RACE AND HISPANIC OR LATINO ORIGIN",
+    "OCCUPATION"
+  ]
+}

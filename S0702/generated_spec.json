@@ -1,0 +1,45 @@
+{
+  "populationType": {
+    "_DEFAULT": "Person"
+  },
+  "measurement": {
+    "_DEFAULT": {
+      "measuredProperty": "count XXXXX",
+      "statType": "measuredValue"
+    },
+    "Margin of Error": {
+      "measuredProperty": "count",
+      "statType": "marginOfError"
+    }
+  },
+  "enumSpecializations": {},
+  "pvs": {
+    "age": {
+      "Population 1 year and over": "[1 - Years]"
+    },
+    "residenceType": {
+      "RESIDENCE 1 YEAR AGO": "Household"
+    },
+    "statType": {
+      "Margin of Error": "marginOfError"
+    }
+  },
+  "inferredSpec": {
+    "residenceType": {
+      "age": "[1 - Years]"
+    }
+  },
+  "universePVs": [],
+  "denominators": {},
+  "ignoreColumns XXXXX": [
+    "Total",
+    "Total MOE",
+    "PERCENT IMPUTED",
+    "Percent Imputed",
+    "PERCENT ALLOCATED"
+  ],
+  "ignoreTokens XXXXX": [
+    "Estimate",
+    "RESIDENCE 1 YEAR AGO"
+  ]
+}

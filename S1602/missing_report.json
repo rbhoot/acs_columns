@@ -1,0 +1,35 @@
+{
+  "columns_missing_pv": [
+    "No one age 14 and over speaks English only or speaks English \"very well\"!!Estimate!!PERCENT IMPUTED!!Language status (speak a language other than English)",
+    "Estimate!!Percent!!All households",
+    "Percent!!Estimate!!All households",
+    "Estimate!!Total!!All households",
+    "Limited English-speaking households!!Estimate!!All households",
+    "Estimate!!Limited English-speaking households!!All households",
+    "No one age 14 and over speaks English only or speaks English \"very well\"!!Estimate!!PERCENT IMPUTED!!Language status",
+    "No one age 14 and over speaks English only or speaks English \"very well\"!!Estimate!!PERCENT IMPUTED!!Ability to speak English",
+    "Total!!Estimate!!All households",
+    "Percent limited English-speaking households!!Estimate!!All households",
+    "Estimate!!Percent limited English-speaking households!!All households",
+    "No one age 14 and over speaks English only or speaks English \"very well\"!!Estimate!!All households"
+  ],
+  "missing_tokens": [
+    "No one age 14 and over speaks English only or speaks English \"very well\"",
+    "All households",
+    "Estimate",
+    "Households speaking",
+    "PERCENT IMPUTED",
+    "Language status",
+    "Language status (speak a language other than English)",
+    "Ability to speak English",
+    "Limited English-speaking households",
+    "Total",
+    "Percent",
+    "Percent limited English-speaking households",
+    "Households speaking --",
+    "Limited English-speaking households MOE",
+    "Total MOE",
+    "Percent MOE",
+    "Percent limited English-speaking households MOE"
+  ]
+}

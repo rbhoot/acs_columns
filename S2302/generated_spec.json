@@ -1,0 +1,70 @@
+{
+  "populationType": {
+    "_DEFAULT": "Person"
+  },
+  "measurement": {
+    "_DEFAULT": {
+      "measuredProperty": "count XXXXX",
+      "statType": "measuredValue"
+    },
+    "Margin of Error": {
+      "measuredProperty": "count",
+      "statType": "marginOfError"
+    }
+  },
+  "enumSpecializations": {},
+  "pvs": {
+    "employmentStatus": {
+      "In labor force": "BLS_InLaborForce",
+      "Not in labor force": "BLS_NotInLaborForce"
+    },
+    "householdType": {
+      "Married-couple families": "MarriedCoupleFamilyHousehold",
+      "Female householder, no spouse present": "SingleMotherFamilyHousehold",
+      "Female householder, no husband present": "SingleMotherFamilyHousehold"
+    },
+    "statType": {
+      "Margin of Error": "marginOfError"
+    },
+    "employment": {
+      "Not in labor force": "BLS_Unemployed"
+    },
+    "householderWorkStatus": {
+      "Householder worked full-time, year-round in the past 12 months": "USC_FullTimeYearRoundWorker"
+    }
+  },
+  "inferredSpec": {
+    "employmentStatus": {
+      "age": "[16 19 Years]"
+    },
+    "householdType": {
+      "age": "[15 19 Years]",
+      "residenceType": "Household"
+    },
+    "employment": {
+      "employmentStatus": "BLS_InLaborForce",
+      "age": "[16 - Years]"
+    }
+  },
+  "universePVs": [
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "employment"
+      ],
+      "dependentPVs": {
+        "age": "[16 - Years]"
+      }
+    }
+  ],
+  "denominators": {},
+  "ignoreColumns XXXXX": [
+    "Total",
+    "Total MOE",
+    "Percent",
+    "Percent MOE"
+  ],
+  "ignoreTokens XXXXX": [
+    "Estimate"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "columns_missing_pv": [
+    "Estimate!!Total!!PERCENT ALLOCATED!!Industry",
+    "Total!!Estimate!!Other services, except public administration",
+    "Total!!Estimate!!PERCENT ALLOCATED!!Industry",
+    "Total!!Estimate!!PERCENT IMPUTED!!Industry"
+  ],
+  "missing_tokens": [
+    "Estimate",
+    "PERCENT IMPUTED",
+    "Industry",
+    "Other services, except public administration",
+    "Total",
+    "PERCENT ALLOCATED",
+    "Natural resources, construction, and maintenance occupations MOE",
+    "Total MOE",
+    "Service occupations MOE",
+    "Sales and office occupations MOE",
+    "Production, transportation, and material moving occupations MOE",
+    "Management, business, science, and arts occupations MOE"
+  ]
+}

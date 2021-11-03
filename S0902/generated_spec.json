@@ -1,0 +1,132 @@
+{
+  "populationType": {
+    "_DEFAULT": "Person"
+  },
+  "measurement": {
+    "_DEFAULT": {
+      "measuredProperty": "count XXXXX",
+      "statType": "measuredValue"
+    },
+    "Margin of Error": {
+      "measuredProperty": "count",
+      "statType": "marginOfError"
+    }
+  },
+  "enumSpecializations": {
+    "Black or African American": "One race"
+  },
+  "pvs": {
+    "age": {
+      "Population 15 to 19 years": "[15 19 Years]",
+      "Population 16 to 19 years": "[16 19 Years]",
+      "Population 15 to 19 years in households": "[15 19 Years]"
+    },
+    "gender": {
+      "Male": "Male",
+      "Female": "Female"
+    },
+    "maritalStatus": {
+      "Ever married": "EverMarried"
+    },
+    "schoolEnrollment": {
+      "Enrolled in school": "EnrolledInSchool",
+      "Public": "EnrolledInPublicSchool",
+      "Private": "EnrolledInPrivateSchool",
+      "Not enrolled in school": "NotEnrolledInSchool",
+      "Not enrolled in school and not in the labor force": "NotEnrolledInSchool"
+    },
+    "employmentStatus": {
+      "In the labor force": "BLS_InLaborForce",
+      "Not enrolled in school and not in the labor force": "BLS_NotInLaborForce"
+    },
+    "birthEventStatus": {
+      "Female with a birth in the past 12 months": "BirthInThePast12Months"
+    },
+    "householdType": {
+      "In married-couple family households": "MarriedCoupleFamilyHousehold",
+      "In male householder, no spouse present, family households": "SingleFatherFamilyHousehold",
+      "In male householder, no wife present, family households": "SingleFatherFamilyHousehold",
+      "In female householder, no spouse present, family households": "SingleMotherFamilyHousehold",
+      "In female householder, no husband present, family households": "SingleMotherFamilyHousehold",
+      "In nonfamily households": "NonfamilyHousehold"
+    },
+    "race": {
+      "Black or African American": "BlackOrAfricanAmericanAlone",
+      "Black or African American MOE": "BlackOrAfricanAmericanAlone",
+      "Hispanic or Latino origin (of any race)": "HispanicOrLatino",
+      "Hispanic or Latino origin (of any race) MOE": "HispanicOrLatino",
+      "White alone, not Hispanic or Latino": "WhiteAloneNotHispanicOrLatino",
+      "White alone, not Hispanic or Latino MOE": "WhiteAloneNotHispanicOrLatino"
+    },
+    "residenceType": {
+      "Population 15 to 19 years in households": "Household"
+    },
+    "statType": {
+      "Margin of Error": "marginOfError"
+    },
+    "householderRace": {
+      "Black or African American": "BlackOrAfricanAmericanAlone",
+      "Hispanic or Latino origin (of any race)": "HispanicOrLatino",
+      "White alone, not Hispanic or Latino": "WhiteAloneNotHispanicOrLatino"
+    }
+  },
+  "inferredSpec": {
+    "schoolEnrollment": {
+      "age": "[15 19 Years]"
+    },
+    "gender": {
+      "age": "[15 19 Years]"
+    },
+    "employmentStatus": {
+      "age": "[16 19 Years]"
+    },
+    "householdType": {
+      "age": "[15 19 Years]",
+      "residenceType": "Household"
+    },
+    "race": {
+      "age": "[1 - Years]"
+    },
+    "residenceType": {
+      "age": "[1 - Years]"
+    }
+  },
+  "universePVs": [
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "birthEventStatus"
+      ],
+      "dependentPV": {
+        "gender": "Female"
+      }
+    },
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "maritalStatus"
+      ],
+      "dependentPVs": {
+        "age": "[15 - Years]"
+      }
+    },
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "schoolEnrollment"
+      ],
+      "dependentPVs": {
+        "age": "[3 - Years]"
+      }
+    }
+  ],
+  "denominators": {},
+  "ignoreColumns XXXXX": [
+    "Total",
+    "Total MOE"
+  ],
+  "ignoreTokens XXXXX": [
+    "Estimate",
+    "SCHOOL ENROLLMENT"
+  ]
+}

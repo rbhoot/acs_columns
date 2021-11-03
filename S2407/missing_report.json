@@ -1,0 +1,27 @@
+{
+  "columns_missing_pv": [
+    "Estimate!!Total!!PERCENT ALLOCATED!!Industry",
+    "Total!!Estimate!!PERCENT ALLOCATED!!Industry",
+    "Local, state, and federal government workers!!Estimate!!PERCENT IMPUTED!!Industry",
+    "Local, state, and federal government workers!!Estimate!!Other services, except public administration",
+    "Total!!Estimate!!PERCENT IMPUTED!!Industry",
+    "Local, state, and federal government workers!!Estimate!!PERCENT ALLOCATED!!Industry",
+    "Estimate!!Local, state, and federal government workers!!PERCENT ALLOCATED!!Industry",
+    "Total!!Estimate!!Other services, except public administration"
+  ],
+  "missing_tokens": [
+    "Estimate",
+    "PERCENT IMPUTED",
+    "Industry",
+    "Other services, except public administration",
+    "Local, state, and federal government workers",
+    "Total",
+    "PERCENT ALLOCATED",
+    "Private not-for-profit wage and salary workers MOE",
+    "Self-employed in own not incorporated business workers and unpaid family workers MOE",
+    "Employee of private company workers MOE",
+    "Local, state, and federal government workers MOE",
+    "Total MOE",
+    "Self-employed in own incorporated business workers MOE"
+  ]
+}

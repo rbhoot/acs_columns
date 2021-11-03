@@ -1,0 +1,104 @@
+{
+  "populationType": {
+    "_DEFAULT": "Person"
+  },
+  "measurement": {
+    "_DEFAULT": {
+      "measuredProperty": "count XXXXX",
+      "statType": "measuredValue"
+    },
+    "Margin of Error": {
+      "measuredProperty": "count",
+      "statType": "marginOfError"
+    }
+  },
+  "enumSpecializations": {},
+  "pvs": {
+    "age": {
+      "Population 25 years and over": "[25 - Years]",
+      "Population 25 years and over with earnings": "WithEarnings",
+      "Population 65 years and over": "[65 - Years]"
+    },
+    "gender": {
+      "Male": "Male",
+      "Female": "Female",
+      "Male MOE": "Male",
+      "Female MOE": "Female"
+    },
+    "race": {
+      "White alone, not Hispanic or Latino": "WhiteAloneNotHispanicOrLatino",
+      "White alone": "WhiteAlone",
+      "Asian alone": "AsianAlone",
+      "Native Hawaiian and Other Pacific Islander alone": "NativeHawaiianOrOtherPacificIslanderAlone",
+      "Some other race alone": "SomeOtherRaceAlone",
+      "Two or more races": "TwoOrMoreRaces"
+    },
+    "statType": {
+      "Margin of Error": "marginOfError"
+    },
+    "educationalAttainment": {
+      "Less than high school graduate": "LessThanHighSchoolGraduate",
+      "High school graduate (includes equivalency)": "HighSchoolGraduateIncludesEquivalency",
+      "Some college or associate's degree": "SomeCollegeOrAssociatesDegree",
+      "Bachelor's degree or higher": "BachelorsDegreeOrHigher",
+      "Bachelor's degree": "BachelorsDegree",
+      "Graduate or professional degree": "GraduateOrProfessionalDegree",
+      "High school graduate or higher": "HighSchoolGraduateOrHigher"
+    },
+    "incomeStatus": {
+      "Population 25 years and over with earnings": "[25 - Years]"
+    },
+    "householderRace": {
+      "White alone": "WhiteAlone",
+      "Asian alone": "AsianAlone",
+      "Native Hawaiian and Other Pacific Islander alone": "NativeHawaiianOrOtherPacificIslanderAlone",
+      "Some other race alone": "SomeOtherRaceAlone",
+      "Two or more races": "TwoOrMoreRaces",
+      "White alone, not Hispanic or Latino": "WhiteAloneNotHispanicOrLatino"
+    },
+    "householderEducationalAttainment": {
+      "Less than high school graduate": "LessThanHighSchoolGraduate",
+      "High school graduate (includes equivalency)": "HighSchoolGraduateIncludesEquivalency",
+      "Bachelor's degree or higher": "BachelorsDegreeOrHigher"
+    }
+  },
+  "inferredSpec": {
+    "gender": {
+      "age": "[15 19 Years]"
+    },
+    "educationalAttainment": {
+      "age": "[25 - Years]"
+    },
+    "race": {
+      "age": "[1 - Years]"
+    }
+  },
+  "universePVs": [
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "educationalAttainment"
+      ],
+      "dependentPVs": {
+        "age": "[25 - Years]"
+      }
+    }
+  ],
+  "denominators": {},
+  "ignoreColumns XXXXX": [
+    "Total",
+    "Total MOE",
+    "PERCENT IMPUTED",
+    "Percent Male",
+    "Percent Female",
+    "Percent Male MOE",
+    "Percent Female MOE",
+    "Percent Imputed",
+    "Percent",
+    "Percent MOE"
+  ],
+  "ignoreTokens XXXXX": [
+    "EDUCATIONAL ATTAINMENT",
+    "Estimate"
+  ]
+}

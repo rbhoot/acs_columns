@@ -1,0 +1,56 @@
+{
+  "populationType": {
+    "_DEFAULT": "Person"
+  },
+  "measurement": {
+    "_DEFAULT": {
+      "measuredProperty": "count XXXXX",
+      "statType": "measuredValue"
+    },
+    "Margin of Error": {
+      "measuredProperty": "count",
+      "statType": "marginOfError"
+    }
+  },
+  "enumSpecializations": {},
+  "pvs": {
+    "age": {
+      "65 years and over": "[65 - Years]",
+      "Population 5 years and over": "[5 - Years]"
+    },
+    "statType": {
+      "Margin of Error": "marginOfError"
+    },
+    "languageSpokenAtHome": {
+      "Spanish or Spanish Creole": "SpanishOrSpanishCreole",
+      "Spanish": "Spanish",
+      "Other Indo-European languages": "OtherIndoEuropeanLanguages",
+      "Asian and Pacific Island languages": "AsianAndPacificIslandLanguages",
+      "Other languages": "OtherLanguages"
+    }
+  },
+  "inferredSpec": {},
+  "universePVs": [
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "languageSpokenAtHome"
+      ],
+      "dependentPVs": {
+        "age": "[5 - Years]"
+      }
+    }
+  ],
+  "denominators": {},
+  "ignoreColumns XXXXX": [
+    "Total",
+    "Total MOE",
+    "PERCENT IMPUTED",
+    "Percent Imputed",
+    "Percent",
+    "Percent MOE"
+  ],
+  "ignoreTokens XXXXX": [
+    "Estimate"
+  ]
+}

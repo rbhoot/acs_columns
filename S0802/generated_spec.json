@@ -1,0 +1,237 @@
+{
+  "populationType": {
+    "_DEFAULT": "Person"
+  },
+  "measurement": {
+    "_DEFAULT": {
+      "measuredProperty": "count XXXXX",
+      "statType": "measuredValue"
+    },
+    "Margin of Error": {
+      "measuredProperty": "count",
+      "statType": "marginOfError"
+    },
+    "Median earnings (dollars)": {
+      "measuredProperty": "earnings",
+      "incomeStatus": "WithEarnings",
+      "statType": "medianValue",
+      "unit": "USDollar"
+    },
+    "Median age (years)": {
+      "measuredProperty": "age",
+      "statType": "medianValue",
+      "unit": "Years"
+    }
+  },
+  "enumSpecializations": {
+    "White": "One race",
+    "Black or African American": "One race",
+    "American Indian and Alaska Native": "One race",
+    "Asian": "One race",
+    "Native Hawaiian and Other Pacific Islander": "One race",
+    "Some other race": "One race"
+  },
+  "pvs": {
+    "age": {
+      "45 to 54 years": "[45 54 Years]"
+    },
+    "gender": {
+      "Male": "Male",
+      "Female": "Female"
+    },
+    "race": {
+      "Black or African American": "BlackOrAfricanAmericanAlone",
+      "Hispanic or Latino origin (of any race)": "HispanicOrLatino",
+      "White alone, not Hispanic or Latino": "WhiteAloneNotHispanicOrLatino",
+      "One race": "OneRace",
+      "Two or more races": "TwoOrMoreRaces",
+      "White": "WhiteAlone",
+      "American Indian and Alaska Native": "AmericanIndianOrAlaskaNativeAlone",
+      "Asian": "AsianAlone",
+      "Native Hawaiian and Other Pacific Islander": "NativeHawaiianOrOtherPacificIslanderAlone",
+      "Some other race": "SomeOtherRaceAlone"
+    },
+    "statType": {
+      "Margin of Error": "marginOfError"
+    },
+    "establishmentOwnership": {
+      "Unpaid family workers": "PrivatelyOwned"
+    },
+    "workerClassification": {
+      "Unpaid family workers": "UnpaidFamilyWorker"
+    },
+    "armedForcesStatus": {
+      "Armed Forces": "InArmedForces"
+    },
+    "citizenship": {
+      "Naturalized U.S. citizen": "USCitizenByNaturalization",
+      "Native": "USCitizenBornInTheUnitedStates",
+      "Not a U.S. citizen": "NotAUSCitizen"
+    },
+    "nativity": {
+      "Foreign born": "USC_ForeignBorn",
+      "Native": "USC_Native"
+    },
+    "naics": {
+      "Agriculture, forestry, fishing and hunting, and mining": "NAICS/11_21",
+      "Construction": "NAICS/23",
+      "Manufacturing": "NAICS/33",
+      "Wholesale trade": "NAICS/42",
+      "Retail trade": "NAICS/44-45",
+      "Transportation and warehousing, and utilities": "NAICS/48-49_22",
+      "Educational services, and health care and social assistance": "NAICS/61-62",
+      "Arts, entertainment, and recreation, and accommodation and food services": "NAICS/71-72",
+      "Other services (except public administration)": "NAICS/81",
+      "Public administration": "NAICS/92"
+    },
+    "occupation": {
+      "Management, business, science, and arts occupations": "SOCv2018/highLevelAggregation-1",
+      "Service occupations": "SOCv2018/intermediateAggregation-5",
+      "Sales and office occupations": "SOCv2018/highLevelAggregation-3",
+      "Natural resources, construction, and maintenance occupations": "SOCv2018/highLevelAggregation-4",
+      "Production, transportation, and material moving occupations": "SOCv2018/highLevelAggregation-5"
+    },
+    "income": {
+      "$15,000 to $24,999": "[15000 24999 USDollar]",
+      "$25,000 to $34,999": "[25000 34999 USDollar]",
+      "$35,000 to $49,999": "[35000 49999 USDollar]",
+      "$75,000 or more": "[75000 - USDollar]",
+      "$1 to $9,999 or loss": "[- 9999 USDollar]",
+      "$10,000 to $14,999": "[10000 14999 USDollar]",
+      "$50,000 to $64,999": "[50000 64999 USDollar]",
+      "$65,000 to $74,999": "[65000 74999 USDollar]"
+    },
+    "povertyStatus": {
+      "100 to 149 percent of the poverty level": "[1 1.49 RatioToPovertyLine]",
+      "Below 100 percent of the poverty level": "[- 1 RatioToPovertyLine]",
+      "At or above 150 percent of the poverty level": "[1.5 - RatioToPovertyLine]"
+    },
+    "earnings": {
+      "$1 to $9,999 or loss": "[- 9999 USDollar]",
+      "$10,000 to $14,999": "[10000 14999 USDollar]",
+      "$15,000 to $24,999": "[15000 34999 USDollar]",
+      "$25,000 to $34,999": "[25000 34999 USDollar]",
+      "$35,000 to $49,999": "[35000 49999 USDollar]",
+      "$50,000 to $64,999": "[50000 64999 USDollar]",
+      "$65,000 to $74,999": "[65000 74999 USDollar]"
+    },
+    "householderRace": {
+      "One race": "OneRace",
+      "White": "WhiteAlone",
+      "Black or African American": "BlackOrAfricanAmericanAlone",
+      "American Indian and Alaska Native": "AmericanIndianOrAlaskaNativeAlone",
+      "Asian": "AsianAlone",
+      "Native Hawaiian and Other Pacific Islander": "NativeHawaiianOrOtherPacificIslanderAlone",
+      "Some other race": "SomeOtherRaceAlone",
+      "Two or more races": "TwoOrMoreRaces",
+      "Hispanic or Latino origin (of any race)": "HispanicOrLatino",
+      "White alone, not Hispanic or Latino": "WhiteAloneNotHispanicOrLatino"
+    }
+  },
+  "inferredSpec": {
+    "gender": {
+      "age": "[15 19 Years]"
+    },
+    "workerClassification": {
+      "age": "[16 - Years]",
+      "armedForcesStatus": "Civilian",
+      "employment": "BLS_Employed",
+      "workerStatus": "Worker"
+    },
+    "naics": {
+      "age": "[16 - Years]",
+      "workerStatus": "Worker"
+    },
+    "occupation": {
+      "age": "[16 - Years]",
+      "workerStatus": "Worker"
+    },
+    "race": {
+      "age": "[1 - Years]"
+    },
+    "nativity": {
+      "age": "[1 - Years]"
+    },
+    "citizenship": {
+      "age": "[1 - Years]"
+    },
+    "povertyStatus": {
+      "age": "[1 - Years]"
+    }
+  },
+  "universePVs": [
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "armedForcesStatus"
+      ],
+      "dependentPVs": {
+        "age": "[16 - Years]"
+      }
+    },
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "workerClassification"
+      ],
+      "dependentPVs": {
+        "age": "[16 - Years]",
+        "workerStatus": "Worker",
+        "employment": "BLS_Employed",
+        "armedForcesStatus": "Civilian"
+      }
+    },
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "income"
+      ],
+      "dependentPVs": {
+        "age": "[15 - Years]",
+        "incomeStatus": "WithIncome"
+      }
+    },
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "armedForcesStatus"
+      ],
+      "dependentPVs": {
+        "age": "[16 - Years]",
+        "employmentStatus": "BLS_InLaborForce"
+      }
+    },
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "occupation"
+      ],
+      "dependentPVs": {
+        "age": "[16 - Years]",
+        "armedForcesStatus": "Civilian",
+        "employment": "BLS_Employed"
+      }
+    }
+  ],
+  "denominators": {},
+  "ignoreColumns XXXXX": [
+    "Total",
+    "Total MOE",
+    "PERCENT IMPUTED",
+    "Percent Imputed",
+    "PERCENT ALLOCATED",
+    "Total!!Margin of Error!!Median age (years)"
+  ],
+  "ignoreTokens XXXXX": [
+    "HOUSING TENURE",
+    "CITIZENSHIP STATUS",
+    "POVERTY STATUS IN THE PAST 12 MONTHS",
+    "NATIVITY AND CITIZENSHIP STATUS",
+    "AGE",
+    "Estimate",
+    "RACE AND HISPANIC OR LATINO ORIGIN",
+    "SEX",
+    "OCCUPATION",
+    "LANGUAGE SPOKEN AT HOME AND ABILITY TO SPEAK ENGLISH"
+  ]
+}

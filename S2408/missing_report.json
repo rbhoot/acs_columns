@@ -1,0 +1,19 @@
+{
+  "columns_missing_pv": [
+    "Median earnings (dollars) for female!!Estimate!!PERCENT IMPUTED!!Class of worker",
+    "Median earnings (dollars)!!Estimate!!PERCENT IMPUTED!!Class of worker",
+    "Median earnings (dollars) for male!!Estimate!!PERCENT IMPUTED!!Class of worker",
+    "Total!!Estimate!!PERCENT IMPUTED!!Class of worker"
+  ],
+  "missing_tokens": [
+    "PERCENT IMPUTED",
+    "Class of worker",
+    "Estimate",
+    "Total",
+    "Percent Female",
+    "Percent Male",
+    "Percent Female MOE",
+    "Percent Male MOE",
+    "Total MOE"
+  ]
+}

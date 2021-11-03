@@ -1,0 +1,66 @@
+{
+  "populationType": {
+    "_DEFAULT": "Person"
+  },
+  "measurement": {
+    "_DEFAULT": {
+      "measuredProperty": "count XXXXX",
+      "statType": "measuredValue"
+    },
+    "Margin of Error": {
+      "measuredProperty": "count",
+      "statType": "marginOfError"
+    },
+    "Median age (years)": {
+      "measuredProperty": "age",
+      "statType": "medianValue",
+      "unit": "Years"
+    }
+  },
+  "enumSpecializations": {},
+  "pvs": {
+    "age": {
+      "Under 18 years": "[- 18 Years]",
+      "18 to 24 years": "[18 24 Years]",
+      "75 years and over": "[75 - Years]",
+      "65 years and over": "[65 - Years]",
+      "Under 5 years": "[- 5 Years]",
+      "15 to 17 years": "[15 17 Years]",
+      "85 years and over": "[85 - Years]"
+    },
+    "gender": {
+      "Male": "Male",
+      "Female": "Female",
+      "Male MOE": "Male",
+      "Female MOE": "Female"
+    },
+    "statType": {
+      "Margin of Error": "marginOfError"
+    }
+  },
+  "inferredSpec": {
+    "gender": {
+      "age": "[15 19 Years]"
+    }
+  },
+  "universePVs": [],
+  "denominators": {},
+  "ignoreColumns XXXXX": [
+    "Total",
+    "Total MOE",
+    "PERCENT IMPUTED",
+    "Percent Male",
+    "Percent Female",
+    "Percent Male MOE",
+    "Percent Female MOE",
+    "Percent Imputed",
+    "PERCENT ALLOCATED",
+    "Percent",
+    "Percent MOE"
+  ],
+  "ignoreTokens XXXXX": [
+    "AGE",
+    "Estimate",
+    "SEX"
+  ]
+}

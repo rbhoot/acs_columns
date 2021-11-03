@@ -1,0 +1,22 @@
+{
+  "columns_missing_pv": [
+    "Total!!Estimate!!PERCENT ALLOCATED!!Earnings in the past 12 months",
+    "Total!!Estimate!!Mean earnings (dollars)",
+    "Total!!Estimate!!PERCENT IMPUTED!!Earnings in the past 12 months",
+    "Total!!Estimate!!Median earnings (dollars)"
+  ],
+  "missing_tokens": [
+    "Estimate",
+    "PERCENT IMPUTED",
+    "Earnings in the past 12 months",
+    "Total",
+    "PERCENT ALLOCATED",
+    "Percent Female",
+    "Percent Female MOE",
+    "Total MOE",
+    "Percent MOE",
+    "Percent",
+    "Percent Male",
+    "Percent Male MOE"
+  ]
+}

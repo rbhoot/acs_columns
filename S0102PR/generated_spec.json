@@ -1,0 +1,287 @@
+{
+  "populationType": {
+    "_DEFAULT": "Person"
+  },
+  "measurement": {
+    "_DEFAULT": {
+      "measuredProperty": "count XXXXX",
+      "statType": "measuredValue"
+    },
+    "Margin of Error": {
+      "measuredProperty": "count",
+      "statType": "marginOfError"
+    },
+    "Median age (years)": {
+      "measuredProperty": "age",
+      "statType": "medianValue",
+      "unit": "Years"
+    },
+    "Mean earnings (dollars)": {
+      "statType": "meanValue",
+      "measuredProperty": "earnings",
+      "incomeStatus": "WithEarnings",
+      "age": "[16 - Years]",
+      "workStatus": "USC_FullTimeYearRoundWorker",
+      "unit": "USDollar"
+    }
+  },
+  "enumSpecializations": {
+    "White": "One race",
+    "Black or African American": "One race",
+    "American Indian and Alaska Native": "One race",
+    "Asian": "One race",
+    "Native Hawaiian and Other Pacific Islander": "One race",
+    "Some other race": "One race"
+  },
+  "pvs": {
+    "age": {
+      "Population 1 year and over": "[1 - Years]",
+      "Population 25 years and over": "[25 - Years]",
+      "Population 15 years and over": "[15 - Years]",
+      "Population 5 years and over": "[5 - Years]",
+      "Population 16 years and over": "[16 - Years]",
+      "Civilian population 18 years and over": "[18 - Years]"
+    },
+    "gender": {
+      "Male": "Male",
+      "Female": "Female"
+    },
+    "maritalStatus": {
+      "Widowed": "Widowed",
+      "Never married": "NeverMarried",
+      "Now married, except separated": "MarriedAndNotSeparated",
+      "Separated": "Separated",
+      "Divorced": "Divorced"
+    },
+    "employmentStatus": {
+      "In labor force": "BLS_InLaborForce",
+      "Not in labor force": "BLS_NotInLaborForce",
+      "Civilian labor force": "BLS_InLaborForce"
+    },
+    "race": {
+      "Black or African American": "BlackOrAfricanAmericanAlone",
+      "Hispanic or Latino origin (of any race)": "HispanicOrLatino",
+      "White alone, not Hispanic or Latino": "WhiteAloneNotHispanicOrLatino",
+      "One race": "OneRace",
+      "Two or more races": "TwoOrMoreRaces",
+      "White": "WhiteAlone",
+      "American Indian and Alaska Native": "AmericanIndianOrAlaskaNativeAlone",
+      "Asian": "AsianAlone",
+      "Native Hawaiian and Other Pacific Islander": "NativeHawaiianOrOtherPacificIslanderAlone",
+      "Some other race": "SomeOtherRaceAlone"
+    },
+    "residenceType": {
+      "RESIDENCE 1 YEAR AGO": "Household"
+    },
+    "statType": {
+      "Margin of Error": "marginOfError"
+    },
+    "employment": {
+      "Employed": "BLS_Employed",
+      "Unemployed": "BLS_Unemployed",
+      "Not in labor force": "BLS_Unemployed"
+    },
+    "armedForcesStatus": {
+      "Civilian population 18 years and over": "Civilian",
+      "Civilian labor force": "Civilian",
+      "Armed Forces": "InArmedForces",
+      "Civilian veteran": "Civilian"
+    },
+    "citizenship": {
+      "Naturalized U.S. citizen": "USCitizenByNaturalization",
+      "Native": "USCitizenBornInTheUnitedStates",
+      "Not a U.S. citizen": "NotAUSCitizen"
+    },
+    "nativity": {
+      "Foreign born": "USC_ForeignBorn",
+      "Native": "USC_Native"
+    },
+    "disabilityStatus": {
+      "No disability": "NoDisability"
+    },
+    "residentStatus": {
+      "Same house": "SameHouse1YearAgo"
+    },
+    "educationalAttainment": {
+      "Less than high school graduate": "LessThanHighSchoolGraduate",
+      "Some college or associate's degree": "SomeCollegeOrAssociatesDegree",
+      "Bachelor's degree or higher": "BachelorsDegreeOrHigher"
+    },
+    "incomeStatus": {
+      "With earnings": "WithEarnings"
+    },
+    "povertyStatus": {
+      "100 to 149 percent of the poverty level": "[1 1.49 RatioToPovertyLine]",
+      "Below 100 percent of the poverty level": "[- 1 RatioToPovertyLine]",
+      "At or above 150 percent of the poverty level": "[1.5 - RatioToPovertyLine]"
+    },
+    "languageSpokenAtHome": {
+      "English only": "OnlyEnglish",
+      "Language other than English": "LanguageOtherThanEnglish"
+    },
+    "householderRace": {
+      "One race": "OneRace",
+      "White": "WhiteAlone",
+      "Black or African American": "BlackOrAfricanAmericanAlone",
+      "American Indian and Alaska Native": "AmericanIndianOrAlaskaNativeAlone",
+      "Asian": "AsianAlone",
+      "Native Hawaiian and Other Pacific Islander": "NativeHawaiianOrOtherPacificIslanderAlone",
+      "Some other race": "SomeOtherRaceAlone",
+      "Two or more races": "TwoOrMoreRaces",
+      "Hispanic or Latino origin (of any race)": "HispanicOrLatino",
+      "White alone, not Hispanic or Latino": "WhiteAloneNotHispanicOrLatino"
+    },
+    "benefitsStatus": {
+      "With Food Stamp/SNAP benefits": "WithFoodStampsInThePast12Months"
+    },
+    "householderEducationalAttainment": {
+      "Less than high school graduate": "LessThanHighSchoolGraduate",
+      "Bachelor's degree or higher": "BachelorsDegreeOrHigher"
+    },
+    "veteranStatus": {
+      "Civilian veteran": "Veteran"
+    },
+    "dateOfEntry": {
+      "Entered before 2000": "[- 2000 Date]",
+      "Entered 2000 to 2009": "[2000 2009 Date]",
+      "Entered 2010 or later": "[2010 - Date]"
+    }
+  },
+  "inferredSpec": {
+    "gender": {
+      "age": "[15 19 Years]"
+    },
+    "employmentStatus": {
+      "age": "[16 19 Years]"
+    },
+    "residentStatus": {
+      "residenceType": "Household",
+      "age": "[1 - Years]"
+    },
+    "educationalAttainment": {
+      "age": "[25 - Years]"
+    },
+    "employment": {
+      "employmentStatus": "BLS_InLaborForce",
+      "age": "[16 - Years]"
+    },
+    "race": {
+      "age": "[1 - Years]"
+    },
+    "nativity": {
+      "age": "[1 - Years]"
+    },
+    "citizenship": {
+      "age": "[1 - Years]"
+    },
+    "povertyStatus": {
+      "age": "[1 - Years]"
+    },
+    "residenceType": {
+      "age": "[1 - Years]"
+    }
+  },
+  "universePVs": [
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "armedForcesStatus"
+      ],
+      "dependentPVs": {
+        "age": "[16 - Years]"
+      }
+    },
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "educationalAttainment"
+      ],
+      "dependentPVs": {
+        "age": "[25 - Years]"
+      }
+    },
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "maritalStatus"
+      ],
+      "dependentPVs": {
+        "age": "[15 - Years]"
+      }
+    },
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "employment"
+      ],
+      "dependentPVs": {
+        "age": "[16 - Years]"
+      }
+    },
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "veteranStatus"
+      ],
+      "dependentPVs": {
+        "age": "[18 - Years]",
+        "armedForcesStatus": "Civilian"
+      }
+    },
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "armedForcesStatus"
+      ],
+      "dependentPVs": {
+        "age": "[16 - Years]",
+        "employmentStatus": "BLS_InLaborForce"
+      }
+    },
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "languageSpokenAtHome"
+      ],
+      "dependentPVs": {
+        "age": "[5 - Years]"
+      }
+    },
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "residentStatus"
+      ],
+      "dependentPVs": {
+        "age": "[1 - Years]"
+      }
+    }
+  ],
+  "denominators": {},
+  "ignoreColumns XXXXX": [
+    "Total",
+    "Total MOE",
+    "Estimate!!Total!!MARITAL STATUS!!Population 15 years and over",
+    "Margin of Error!!Total!!MARITAL STATUS!!Population 15 years and over",
+    "Margin of Error!!Total MOE!!MARITAL STATUS!!Population 15 years and over",
+    "Total!!Estimate!!MARITAL STATUS!!Population 15 years and over",
+    "Total!!Margin of Error!!MARITAL STATUS!!Population 15 years and over",
+    "Total!!Margin of Error!!Median age (years)",
+    "Percent of civilian labor force"
+  ],
+  "ignoreTokens XXXXX": [
+    "MARITAL STATUS",
+    "HOUSING TENURE",
+    "POVERTY STATUS IN THE PAST 12 MONTHS",
+    "EDUCATIONAL ATTAINMENT",
+    "Estimate",
+    "RACE AND HISPANIC OR LATINO ORIGIN",
+    "DISABILITY STATUS",
+    "LANGUAGE SPOKEN AT HOME AND ABILITY TO SPEAK ENGLISH",
+    "EMPLOYMENT STATUS",
+    "RESIDENCE 1 YEAR AGO",
+    "PLACE OF BIRTH, NATIVITY AND CITIZENSHIP STATUS, AND YEAR OF ENTRY",
+    "SEX AND AGE",
+    "VETERAN STATUS"
+  ]
+}

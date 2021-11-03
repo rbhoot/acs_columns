@@ -1,0 +1,174 @@
+{
+  "populationType": {
+    "_DEFAULT": "Person"
+  },
+  "measurement": {
+    "_DEFAULT": {
+      "measuredProperty": "count XXXXX",
+      "statType": "measuredValue"
+    },
+    "Margin of Error": {
+      "measuredProperty": "count",
+      "statType": "marginOfError"
+    },
+    "Median earnings (dollars)": {
+      "measuredProperty": "earnings",
+      "incomeStatus": "WithEarnings",
+      "statType": "medianValue",
+      "unit": "USDollar"
+    },
+    "Median earnings (dollars) for full-time, year-round workers with earnings": {
+      "statType": "medianValue",
+      "measuredProperty": "earnings",
+      "incomeStatus": "WithEarnings",
+      "age": "[16 - Years]",
+      "workStatus": "USC_FullTimeYearRoundWorker",
+      "unit": "USDollar"
+    },
+    "Mean earnings (dollars)": {
+      "statType": "meanValue",
+      "measuredProperty": "earnings",
+      "incomeStatus": "WithEarnings",
+      "age": "[16 - Years]",
+      "workStatus": "USC_FullTimeYearRoundWorker",
+      "unit": "USDollar"
+    },
+    "Mean earnings (dollars) for full-time, year-round workers with earnings": {
+      "statType": "meanValue",
+      "measuredProperty": "earnings",
+      "incomeStatus": "WithEarnings",
+      "age": "[16 - Years]",
+      "workStatus": "USC_FullTimeYearRoundWorker",
+      "unit": "USDollar"
+    },
+    "MEDIAN EARNINGS BY EDUCATIONAL ATTAINMENT": {
+      "statType": "medianValue",
+      "measuredProperty": "earnings",
+      "incomeStatus": "WithEarnings",
+      "age": "[25 - Years]",
+      "unit": "USDollar"
+    }
+  },
+  "enumSpecializations": {},
+  "pvs": {
+    "age": {
+      "Population 16 years and over with earnings": "WithEarnings",
+      "Full-time, year-round workers with earnings": "WithEarnings",
+      "Population 25 years and over with earnings": "WithEarnings"
+    },
+    "gender": {
+      "Male": "Male",
+      "Female": "Female",
+      "Male MOE": "Male",
+      "Female MOE": "Female"
+    },
+    "statType": {
+      "Margin of Error": "marginOfError"
+    },
+    "educationalAttainment": {
+      "Less than high school graduate": "LessThanHighSchoolGraduate",
+      "High school graduate (includes equivalency)": "HighSchoolGraduateIncludesEquivalency",
+      "Some college or associate's degree": "SomeCollegeOrAssociatesDegree",
+      "Bachelor's degree": "BachelorsDegree",
+      "Graduate or professional degree": "GraduateOrProfessionalDegree"
+    },
+    "incomeStatus": {
+      "Population 16 years and over with earnings": "[16 - Years]",
+      "Population 25 years and over with earnings": "[25 - Years]"
+    },
+    "income": {
+      "$15,000 to $24,999": "[15000 24999 USDollar]",
+      "$25,000 to $34,999": "[25000 34999 USDollar]",
+      "$35,000 to $49,999": "[35000 49999 USDollar]",
+      "$75,000 to $99,999": "[75000 99999 USDollar]",
+      "$1 to $9,999 or loss": "[- 9999 USDollar]",
+      "$10,000 to $14,999": "[10000 14999 USDollar]",
+      "$50,000 to $64,999": "[50000 64999 USDollar]",
+      "$65,000 to $74,999": "[65000 74999 USDollar]"
+    },
+    "earnings": {
+      "$1 to $9,999 or loss": "[- 9999 USDollar]",
+      "$10,000 to $14,999": "[10000 14999 USDollar]",
+      "$15,000 to $24,999": "[15000 34999 USDollar]",
+      "$25,000 to $34,999": "[25000 34999 USDollar]",
+      "$35,000 to $49,999": "[35000 49999 USDollar]",
+      "$50,000 to $64,999": "[50000 64999 USDollar]",
+      "$65,000 to $74,999": "[65000 74999 USDollar]",
+      "$75,000 to $99,999": "[75000 99999 USDollar]",
+      "$100,000 or more": "[100000 - USDollar]"
+    },
+    "workStatus": {
+      "Full-time, year-round workers with earnings": "USC_FullTimeYearRoundWorker"
+    },
+    "householderEducationalAttainment": {
+      "Less than high school graduate": "LessThanHighSchoolGraduate",
+      "High school graduate (includes equivalency)": "HighSchoolGraduateIncludesEquivalency"
+    }
+  },
+  "inferredSpec": {
+    "gender": {
+      "age": "[15 19 Years]"
+    },
+    "educationalAttainment": {
+      "age": "[25 - Years]"
+    },
+    "workStatus": {
+      "age": "[16 - Years]"
+    }
+  },
+  "universePVs": [
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "educationalAttainment"
+      ],
+      "dependentPVs": {
+        "age": "[25 - Years]"
+      }
+    },
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "income"
+      ],
+      "dependentPVs": {
+        "age": "[15 - Years]",
+        "incomeStatus": "WithIncome"
+      }
+    },
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "workStatus"
+      ],
+      "dependentPVs": {
+        "age": "[16 64 Years]"
+      }
+    }
+  ],
+  "denominators": {},
+  "ignoreColumns XXXXX": [
+    "Total",
+    "Total MOE",
+    "PERCENT IMPUTED",
+    "Percent Male",
+    "Percent Female",
+    "Percent Male MOE",
+    "Percent Female MOE",
+    "Percent Imputed",
+    "PERCENT ALLOCATED",
+    "Percent",
+    "Percent MOE",
+    "Male!!Margin of Error!!Mean earnings (dollars)",
+    "Female!!Margin of Error!!Mean earnings (dollars)",
+    "Male!!Margin of Error!!Median earnings (dollars)",
+    "Female!!Margin of Error!!Median earnings (dollars)",
+    "Margin of Error!!Male!!Population 16 years and over with earnings!!FULL-TIME, YEAR-ROUND WORKERS WITH EARNINGS!!Median earnings (dollars) for full-time, year-round workers with earnings",
+    "Margin of Error!!Female!!Population 16 years and over with earnings!!FULL-TIME, YEAR-ROUND WORKERS WITH EARNINGS!!Median earnings (dollars) for full-time, year-round workers with earnings",
+    "Margin of Error!!Male MOE!!Population 16 years and over with earnings!!FULL-TIME, YEAR-ROUND WORKERS WITH EARNINGS!!Median earnings (dollars) for full-time, year-round workers with earnings",
+    "Margin of Error!!Female MOE!!Population 16 years and over with earnings!!FULL-TIME, YEAR-ROUND WORKERS WITH EARNINGS!!Median earnings (dollars) for full-time, year-round workers with earnings"
+  ],
+  "ignoreTokens XXXXX": [
+    "Estimate"
+  ]
+}

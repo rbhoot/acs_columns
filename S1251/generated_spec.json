@@ -1,0 +1,89 @@
+{
+  "populationType": {
+    "_DEFAULT": "Person"
+  },
+  "measurement": {
+    "_DEFAULT": {
+      "measuredProperty": "count XXXXX",
+      "statType": "measuredValue"
+    },
+    "Margin of Error": {
+      "measuredProperty": "count",
+      "statType": "marginOfError"
+    }
+  },
+  "enumSpecializations": {},
+  "pvs": {
+    "age": {
+      "Population 15 years and over": "[15 - Years]",
+      "Population 16 years and over": "[16 - Years]"
+    },
+    "gender": {
+      "Male": "Male",
+      "Female": "Female",
+      "Male MOE": "Male",
+      "Female MOE": "Female"
+    },
+    "employmentStatus": {
+      "In labor force": "BLS_InLaborForce",
+      "Not in labor force": "BLS_NotInLaborForce"
+    },
+    "statType": {
+      "Margin of Error": "marginOfError"
+    },
+    "employment": {
+      "Not in labor force": "BLS_Unemployed"
+    },
+    "educationalAttainment": {
+      "Bachelor's degree or higher": "BachelorsDegreeOrHigher"
+    },
+    "householderEducationalAttainment": {
+      "Bachelor's degree or higher": "BachelorsDegreeOrHigher"
+    }
+  },
+  "inferredSpec": {
+    "gender": {
+      "age": "[15 19 Years]"
+    },
+    "employmentStatus": {
+      "age": "[16 19 Years]"
+    },
+    "educationalAttainment": {
+      "age": "[25 - Years]"
+    },
+    "employment": {
+      "employmentStatus": "BLS_InLaborForce",
+      "age": "[16 - Years]"
+    }
+  },
+  "universePVs": [
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "educationalAttainment"
+      ],
+      "dependentPVs": {
+        "age": "[25 - Years]"
+      }
+    },
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "employment"
+      ],
+      "dependentPVs": {
+        "age": "[16 - Years]"
+      }
+    }
+  ],
+  "denominators": {},
+  "ignoreColumns XXXXX": [
+    "Total"
+  ],
+  "ignoreTokens XXXXX": [
+    "HOUSING TENURE",
+    "EDUCATIONAL ATTAINMENT",
+    "AGE",
+    "Estimate"
+  ]
+}

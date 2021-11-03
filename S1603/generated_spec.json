@@ -1,0 +1,129 @@
+{
+  "populationType": {
+    "_DEFAULT": "Person"
+  },
+  "measurement": {
+    "_DEFAULT": {
+      "measuredProperty": "count XXXXX",
+      "statType": "measuredValue"
+    },
+    "Margin of Error": {
+      "measuredProperty": "count",
+      "statType": "marginOfError"
+    },
+    "Speak a language other than English at home": {
+      "measuredProperty": "count",
+      "statType": "measuredValue",
+      "languageSpokenAtHome": "LanguageOtherThanEnglish",
+      "age": "[5 - Years]"
+    },
+    "Percent distribution of people who speak a language other than English at home": {
+      "measuredProperty": "count",
+      "statType": "measuredValue",
+      "languageSpokenAtHome": "LanguageOtherThanEnglish",
+      "age": "[5 - Years]"
+    }
+  },
+  "enumSpecializations": {},
+  "pvs": {
+    "age": {
+      "18 to 64 years": "[18 64 Years]",
+      "5 to 17 years": "[5 17 Years]",
+      "Population 25 years and over": "[25 - Years]",
+      "65 years and over": "[65 - Years]"
+    },
+    "statType": {
+      "Margin of Error": "marginOfError"
+    },
+    "citizenship": {
+      "Naturalized U.S. citizen": "USCitizenByNaturalization",
+      "Native": "USCitizenBornInTheUnitedStates",
+      "Not a U.S. citizen": "NotAUSCitizen"
+    },
+    "nativity": {
+      "Foreign born": "USC_ForeignBorn",
+      "Native": "USC_Native",
+      "Foreign-born population 5 years and over": "USC_ForeignBorn",
+      "Native population 5 years and over": "USC_Native"
+    },
+    "educationalAttainment": {
+      "Less than high school graduate": "LessThanHighSchoolGraduate",
+      "High school graduate (includes equivalency)": "HighSchoolGraduateIncludesEquivalency",
+      "Some college or associate's degree": "SomeCollegeOrAssociatesDegree",
+      "Bachelor's degree or higher": "BachelorsDegreeOrHigher"
+    },
+    "povertyStatus": {
+      "Below poverty level": "BelowPovertyLevelInThePast12Months",
+      "At or above poverty level": "AbovePovertyLevelInThePast12Months",
+      "Population 5 years and over for whom poverty status is determined": "PovertyStatusDetermined"
+    },
+    "languageSpokenAtHome": {
+      "Speak Spanish at home": "Spanish",
+      "Speak Spanish at home MOE": "Spanish",
+      "Spanish or Spanish Creole": "SpanishOrSpanishCreole",
+      "Speak only English at home": "OnlyEnglish",
+      "Speak only English at home MOE": "OnlyEnglish",
+      "People who speak only English at home": "OnlyEnglish"
+    },
+    "householderEducationalAttainment": {
+      "Less than high school graduate": "LessThanHighSchoolGraduate",
+      "High school graduate (includes equivalency)": "HighSchoolGraduateIncludesEquivalency",
+      "Bachelor's degree or higher": "BachelorsDegreeOrHigher"
+    }
+  },
+  "inferredSpec": {
+    "educationalAttainment": {
+      "age": "[25 - Years]"
+    },
+    "nativity": {
+      "age": "[1 - Years]"
+    },
+    "citizenship": {
+      "age": "[1 - Years]"
+    },
+    "povertyStatus": {
+      "age": "[1 - Years]"
+    }
+  },
+  "universePVs": [
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "educationalAttainment"
+      ],
+      "dependentPVs": {
+        "age": "[25 - Years]"
+      }
+    },
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "languageSpokenAtHome"
+      ],
+      "dependentPVs": {
+        "age": "[5 - Years]"
+      }
+    }
+  ],
+  "denominators": {},
+  "ignoreColumns XXXXX": [
+    "Total",
+    "Total MOE",
+    "PERCENT IMPUTED",
+    "Percent Imputed",
+    "Percent",
+    "Percent MOE",
+    "Percent speak Spanish at home",
+    "Percent speak Spanish at home MOE",
+    "Percent speak only English at home",
+    "Percent speak only English at home MOE"
+  ],
+  "ignoreTokens XXXXX": [
+    "CITIZENSHIP STATUS",
+    "POVERTY STATUS IN THE PAST 12 MONTHS",
+    "EDUCATIONAL ATTAINMENT",
+    "NATIVITY AND CITIZENSHIP STATUS",
+    "AGE",
+    "Estimate"
+  ]
+}

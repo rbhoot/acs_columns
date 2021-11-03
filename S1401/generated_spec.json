@@ -1,0 +1,43 @@
+{
+  "populationType": {
+    "_DEFAULT": "Person"
+  },
+  "measurement": {
+    "_DEFAULT": {
+      "measuredProperty": "count XXXXX",
+      "statType": "measuredValue"
+    },
+    "Margin of Error": {
+      "measuredProperty": "count",
+      "statType": "marginOfError"
+    }
+  },
+  "enumSpecializations": {},
+  "pvs": {
+    "age": {
+      "25 to 34 years": "[25 34 Years]",
+      "15 to 17 years": "[15 17 Years]"
+    },
+    "statType": {
+      "Margin of Error": "marginOfError"
+    },
+    "schoolEnrollment XXXXX": {
+      "Population 3 years and over enrolled in school": "EnrolledInSchool"
+    }
+  },
+  "inferredSpec": {},
+  "universePVs": [],
+  "denominators": {},
+  "ignoreColumns XXXXX": [
+    "Total",
+    "Total MOE",
+    "PERCENT IMPUTED",
+    "Percent Imputed",
+    "Percent",
+    "Percent MOE"
+  ],
+  "ignoreTokens XXXXX": [
+    "Estimate",
+    "SCHOOL ENROLLMENT"
+  ]
+}

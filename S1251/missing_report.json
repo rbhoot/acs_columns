@@ -1,0 +1,26 @@
+{
+  "columns_missing_pv": [],
+  "missing_tokens": [
+    "Total",
+    "Estimate",
+    "POVERTY STATUS IN PAST 12 MONTHS",
+    "Below poverty",
+    "EDUCATIONAL ATTAINMENT",
+    "LABOR FORCE PARTICIPATION",
+    "Population for whom poverty status is determined",
+    "AGE",
+    "Median age",
+    "Population 18 years and over",
+    "PRESENCE OF OWN CHILD UNDER 18 YEARS",
+    "Population in households",
+    "With an own child under 18 years",
+    "HOUSING TENURE",
+    "Population 15 years and over in occupied housing units",
+    "Owner-occupied housing units",
+    "Renter-occupied housing units",
+    "Married in the last 12 months",
+    "Divorced in the last 12 months",
+    "With an own child of the householder under 18 years",
+    "Population 15 years and over MOE"
+  ]
+}

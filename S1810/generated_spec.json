@@ -1,0 +1,130 @@
+{
+  "populationType": {
+    "_DEFAULT": "Person"
+  },
+  "measurement": {
+    "_DEFAULT": {
+      "measuredProperty": "count XXXXX",
+      "statType": "measuredValue"
+    },
+    "Margin of Error": {
+      "measuredProperty": "count",
+      "statType": "marginOfError"
+    }
+  },
+  "enumSpecializations": {},
+  "pvs": {
+    "age": {
+      "65 to 74 years": "[65 74 Years]",
+      "5 to 17 years": "[5 17 Years]",
+      "75 years and over": "[75 - Years]",
+      "Under 5 years": "[- 5 Years]",
+      "18 to 34 years": "[18 34 Years]",
+      "35 to 64 years": "[35 64 Years]",
+      "Population under 5 years": "[- 5 Years]",
+      "Population 5 to 17 years": "[5 17 Years]",
+      "Population 18 to 34 years": "[18 34 Years]",
+      "Population 35 to 64 years": "[35 64 Years]",
+      "Population 65 to 74 years": "[65 74 Years]",
+      "Population 75 years and over": "[75 - Years]",
+      "Population under 18 years": "[- 18 Years]",
+      "Population 18 to 64 years": "[18 64 Years]",
+      "Population 65 years and over": "[65 - Years]"
+    },
+    "gender": {
+      "Male": "Male",
+      "Female": "Female"
+    },
+    "race": {
+      "Hispanic or Latino (of any race)": "HispanicOrLatino",
+      "White alone, not Hispanic or Latino": "WhiteAloneNotHispanicOrLatino",
+      "One race": "OneRace",
+      "White alone": "WhiteAlone",
+      "Black or African American alone": "BlackOrAfricanAmericanAlone",
+      "American Indian and Alaska Native alone": "AmericanIndianOrAlaskaNativeAlone",
+      "Asian alone": "AsianAlone",
+      "Native Hawaiian and Other Pacific Islander alone": "NativeHawaiianOrOtherPacificIslanderAlone",
+      "Some other race alone": "SomeOtherRaceAlone",
+      "Two or more races": "TwoOrMoreRaces"
+    },
+    "statType": {
+      "Margin of Error": "marginOfError"
+    },
+    "armedForcesStatus": {
+      "Total civilian noninstitutionalized population": "Civilian"
+    },
+    "institutionalization": {
+      "Total civilian noninstitutionalized population": "USC_NonInstitutionalized"
+    },
+    "disabilityStatus": {
+      "With a disability": "WithDisability",
+      "With a disability MOE": "WithDisability",
+      "With a hearing difficulty": "HearingDifficulty",
+      "With a vision difficulty": "VisionDifficulty",
+      "With a cognitive difficulty": "CognitiveDifficulty",
+      "With an ambulatory difficulty": "AmbulatoryDifficulty",
+      "With a self-care difficulty": "SelfCareDifficulty",
+      "With an independent living difficulty": "IndependentLivingDifficulty"
+    },
+    "householderRace": {
+      "One race": "OneRace",
+      "White alone": "WhiteAlone",
+      "Black or African American alone": "BlackOrAfricanAmericanAlone",
+      "American Indian and Alaska Native alone": "AmericanIndianOrAlaskaNativeAlone",
+      "Asian alone": "AsianAlone",
+      "Native Hawaiian and Other Pacific Islander alone": "NativeHawaiianOrOtherPacificIslanderAlone",
+      "Some other race alone": "SomeOtherRaceAlone",
+      "Two or more races": "TwoOrMoreRaces",
+      "White alone, not Hispanic or Latino": "WhiteAloneNotHispanicOrLatino"
+    }
+  },
+  "inferredSpec": {
+    "gender": {
+      "age": "[15 19 Years]"
+    },
+    "race": {
+      "age": "[1 - Years]"
+    }
+  },
+  "universePVs": [
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "armedForcesStatus"
+      ],
+      "dependentPVs": {
+        "age": "[16 - Years]"
+      }
+    },
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "armedForcesStatus"
+      ],
+      "dependentPVs": {
+        "age": "[16 - Years]",
+        "employmentStatus": "BLS_InLaborForce"
+      }
+    }
+  ],
+  "denominators": {},
+  "ignoreColumns XXXXX": [
+    "Total",
+    "Total MOE",
+    "PERCENT IMPUTED",
+    "Total Civilian Noninstitutionalized Population",
+    "Percent Imputed",
+    "Percent with a disability",
+    "Percent with a disability MOE"
+  ],
+  "ignoreTokens XXXXX": [
+    "AGE",
+    "Estimate",
+    "RACE AND HISPANIC OR LATINO ORIGIN",
+    "SEX",
+    "DISABILITY TYPE BY DETAILED AGE",
+    "Subject",
+    "Total civilian noninstitutionalized population",
+    "DISABILITY STATUS"
+  ]
+}

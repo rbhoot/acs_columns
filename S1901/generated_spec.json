@@ -1,0 +1,74 @@
+{
+  "populationType": {
+    "_DEFAULT": "Person"
+  },
+  "measurement": {
+    "_DEFAULT": {
+      "measuredProperty": "count XXXXX",
+      "statType": "measuredValue"
+    },
+    "Margin of Error": {
+      "measuredProperty": "count",
+      "statType": "marginOfError"
+    },
+    "Median income (dollars)": {
+      "measuredProperty": "income",
+      "statType": "medianValue",
+      "age": "[15 - Years]",
+      "incomeStatus": "WithIncome",
+      "unit": "USDollar"
+    }
+  },
+  "enumSpecializations": {},
+  "pvs": {
+    "householdType": {
+      "Married-couple families": "MarriedCoupleFamilyHousehold"
+    },
+    "statType": {
+      "Margin of Error": "marginOfError"
+    },
+    "income": {
+      "$15,000 to $24,999": "[15000 24999 USDollar]",
+      "$25,000 to $34,999": "[25000 34999 USDollar]",
+      "$35,000 to $49,999": "[35000 49999 USDollar]",
+      "$50,000 to $74,999": "[50000 74999 USDollar]",
+      "$75,000 to $99,999": "[75000 99999 USDollar]",
+      "$10,000 to $14,999": "[10000 14999 USDollar]"
+    },
+    "earnings": {
+      "$10,000 to $14,999": "[10000 14999 USDollar]",
+      "$15,000 to $24,999": "[15000 34999 USDollar]",
+      "$25,000 to $34,999": "[25000 34999 USDollar]",
+      "$35,000 to $49,999": "[35000 49999 USDollar]",
+      "$75,000 to $99,999": "[75000 99999 USDollar]"
+    }
+  },
+  "inferredSpec": {
+    "householdType": {
+      "age": "[15 19 Years]",
+      "residenceType": "Household"
+    }
+  },
+  "universePVs": [
+    {
+      "populationType": "Person",
+      "constraintProperties": [
+        "income"
+      ],
+      "dependentPVs": {
+        "age": "[15 - Years]",
+        "incomeStatus": "WithIncome"
+      }
+    }
+  ],
+  "denominators": {},
+  "ignoreColumns XXXXX": [
+    "Total",
+    "PERCENT IMPUTED",
+    "Percent Imputed",
+    "PERCENT ALLOCATED"
+  ],
+  "ignoreTokens XXXXX": [
+    "Estimate"
+  ]
+}

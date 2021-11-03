@@ -1,0 +1,29 @@
+{
+  "columns_missing_pv": [
+    "Estimate!!Total population!!Total population",
+    "Estimate!!Total population!!DISABILITY STATUS!!Total population",
+    "Estimate!!Total population!!Total population!!SEX AND AGE!!Median age (years)",
+    "Estimate!!Total population!!PLACE OF BIRTH, NATIVITY AND CITIZENSHIP STATUS, AND YEAR OF ENTRY!!Total population"
+  ],
+  "missing_tokens": [
+    "EMPLOYMENT STATUS",
+    "Estimate",
+    "LANGUAGE SPOKEN AT HOME AND ABILITY TO SPEAK ENGLISH",
+    "Speak English less than \"very well\"",
+    "PLACE OF BIRTH, NATIVITY AND CITIZENSHIP STATUS, AND YEAR OF ENTRY",
+    "Total population",
+    "DISABILITY STATUS",
+    "VETERAN STATUS",
+    "EDUCATIONAL ATTAINMENT",
+    "EARNINGS AND BENEFITS IN THE PAST 12 MONTHS (IN 2017 INFLATION-ADJUSTED DOLLARS)",
+    "OCCUPATION",
+    "Percent of civilian labor force",
+    "MARITAL STATUS",
+    "RACE AND HISPANIC ORIGIN OR LATINO ORIGIN",
+    "SCHOOL ENROLLMENT",
+    "SEX AND AGE",
+    "Total population MOE",
+    "EARNINGS AND BENEFITS IN THE PAST 12 MONTHS (IN 2018 INFLATION-ADJUSTED DOLLARS)",
+    "EARNINGS AND BENEFITS IN THE PAST 12 MONTHS (IN 2019 INFLATION-ADJUSTED DOLLARS)"
+  ]
+}
